@@ -156,3 +156,66 @@ body {
     overflow: hidden;
     /* Images should span the full width of their column */
 }
+
+/* --- Photos Page Styling --- */
+
+/* Use the maroon color and Fugaz One font from the menu design */
+.photo-title {
+    font-family: 'Fugaz One', sans-serif; 
+    font-size: 40px; 
+    color: #9F5B68; /* Using the primary accent color from the Menu page */
+    letter-spacing: 2px;
+}
+
+/* 1. Define the Grid Container */
+.photo-grid {
+    display: grid;
+    
+    /* Set up 4 columns of equal width (1fr = 1 fractional unit) */
+    grid-template-columns: repeat(4, 1fr); 
+    
+    /* Add gaps between the grid items (both rows and columns) */
+    gap: 15px; /* Adjust this value to change the spacing */
+    
+    /* Optional: Limit the max width of the gallery container */
+    max-width: 900px;
+    margin: 0 auto; /* Center the grid container */
+    
+    /* Give the grid a white background as seen in the Adobe shot */
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Style the Individual Images */
+.grid-image {
+    width: 100%;
+    /* Set a fixed height for all images to ensure the 3x4 grid alignment is perfect */
+    height: 180px; 
+    
+    /* Crucial: Scale the image to fill the fixed container, cropping if necessary */
+    object-fit: cover; 
+    
+    display: block; /* Removes any extra space below the image */
+}
+
+/* --- Responsiveness (Crucial for a gallery!) --- */
+
+@media (max-width: 992px) {
+    /* On tablets, switch to a 3-column layout */
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* On mobile, switch to a 2-column layout */
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+    .grid-image {
+        height: 150px; /* Reduce height on smaller screens */
+    }
+}
