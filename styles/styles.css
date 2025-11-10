@@ -121,6 +121,15 @@ body {
   padding-right: 50px;
 }
 
+.copyleft-adobe {
+  text-align: left;
+  font-size: 0.7rem;
+  color: var(--fine-print-color);
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+
 /* === CUSTOM FONT === */
 .dosis-Fugaz {
   font-family: "Dosis", sans-serif;
