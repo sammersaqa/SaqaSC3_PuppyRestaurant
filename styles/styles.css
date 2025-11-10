@@ -78,8 +78,7 @@ body {
 }
 
 .imgSingles {
-  margin-top: 50px;
-  margin-left: 100px;
+height: 360px;
 }
 
 .content-grid-adobe {
@@ -136,6 +135,33 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.homepage-splash-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  max-height: 6rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-left: 1rem;
+ text-align:left; 
+}
+
+.homepage-splash-container img{
+ 
+  margin: auto;
+  
+ 
+}
+
+.splash-text-box{
+  color: #5F002B;
+  background-color: white;
+  max-width: 950px;
+  font-family: 'Montauk';
+  margin: auto;
 }
 
 
