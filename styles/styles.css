@@ -21,10 +21,19 @@
   color: var(--burgundy-adobe);
 }
 
+<<<<<<< HEAD
 .navbar-nav {
   list-style: none;
   display: flex;
   gap: 20px;
+=======
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+>>>>>>> 9ccb95daea04dc2eaab6935199c7515e74381ce2
 }
 
 .navbar-nav a {
@@ -84,6 +93,66 @@
 }
 
 .fine-print-text {
+<<<<<<< HEAD
   font-size: 0.75rem;
   color: var(--fine-print-color);
 }
+=======
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
+}
+
+/* --- Page Nav and Copyright (Outside Grid) --- */
+.page-nav-controls-adobe {
+    text-align: center;
+    padding: 30px 0 10px;
+}
+.page-count-adobe {
+    font-size: 0.8rem;
+    color: var(--fine-print-color);
+}
+.copyright-adobe {
+    text-align: right;
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
+    padding-bottom: 20px;
+    padding-right: 50px; /* Align with the right side of the visual container */
+}
+
+body {
+      background-image: url('./RestaurantMockupFiles/assets/wood-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(5px); 
+    }
+
+    /* Navbar link color */
+    .navbar-nav .nav-link {
+      color: #5F002B !important;
+      font-weight: 500;
+    }
+
+    /* Navbar link hover color */
+    .navbar-nav .nav-link:hover {
+      color: #8A0040 !important;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+
+    .dosis-Fugaz {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+>>>>>>> 9ccb95daea04dc2eaab6935199c7515e74381ce2
