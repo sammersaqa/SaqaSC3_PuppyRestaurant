@@ -1,0 +1,141 @@
+/* restaurant-adobe.css */
+
+/* Variables for Color Matching */
+:root {
+    --cream-bg: #f8f6f0;
+    --burgundy-adobe: #8b3c3c; /* Closer to the red/brown in the design */
+    --wood-texture-color: #d1b899;
+    --fine-print-color: #6d6d6d;
+}
+
+body {
+    background-color: #F2E9D9;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+     font-family: 'Brush Script MT', cursive; 
+}
+
+/* ================================== */
+/* 1. HEADER (Image and Nav) */
+/* ================================== */
+.hero-header {
+    position: relative;
+    height: 400px; /* Shorter height to match the design */
+    overflow: hidden;
+    /* Background Image: Ensure the image is focused on the dining area */
+    background: url('/RestaurantMockupFiles/assets/homeHero.jpg') center/cover;
+    background-position: center top;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 400px;
+    margin-top: 25px;
+}
+
+/* Navbar over the image */
+.navbar {
+    z-index: 10;
+}
+
+.logo-adobe {
+    /* Mimics the elegant script font */
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 3.5rem;
+    color: var(--burgundy-adobe); /* Logo has a color */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s;
+}
+
+/* ================================== */
+/* 2. MAIN CONTENT (Wood Background) */
+/* ================================== */
+.content-wood-bg {
+    /* Critical: Apply the wood background to the container */
+    background-image: url('https://via.placeholder.com/200x200/d1b899/FFFFFF?text=Wood+Texture'); 
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 0;
+    margin-top: -50px; /* Pull the content up slightly over the header image */
+    position: relative;
+    z-index: 5;
+    border: 1px solid #c2b09a; /* Subtle border to define the content area */
+}
+
+.content-grid-adobe {
+    /* The main content area in the design has a fixed maximum width */
+    max-width: 900px; 
+    margin: 0 auto;
+    background-color: transparent; /* Ensure content is transparent to show wood */
+}
+
+.content-box {
+    min-height: 250px; /* Base height for all grid boxes */
+}
+
+/* --- Left Food Photo (Top Left) --- */
+.large-food-left {
+    height: 350px; /* Spans two rows visually in the left column */
+    background: url('https://via.placeholder.com/500x700/8B4513/FFFFFF?text=Sandwich+and+Fries') center/cover;
+    border-right: 1px solid #e8e0d4; /* Subtle divider */
+    margin-top: -30px; /* Pulls the image up over the boundary */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Title and Description (Top Right) --- */
+.text-info-box {
+    padding: 30px;
+}
+.title-muzzle-adobe {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.description-text-adobe {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Small Food Photo (Bottom Right) --- */
+.small-food-right {
+    height: 180px;
+    background: url('https://via.placeholder.com/500x300/503020/FFFFFF?text=Burgers') center/cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 30px 0 0; /* Add margin to separate it from left content */
+}
+
+/* --- Fine Print (Bottom Left) --- */
+.fine-print-box {
+    padding: 20px 0 0 10px;
+}
+.fine-print-text {
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
+}
+
+/* --- Page Nav and Copyright (Outside Grid) --- */
+.page-nav-controls-adobe {
+    text-align: center;
+    padding: 30px 0 10px;
+}
+.page-count-adobe {
+    font-size: 0.8rem;
+    color: var(--fine-print-color);
+}
+.copyright-adobe {
+    text-align: right;
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
+    padding-bottom: 20px;
+    padding-right: 50px; /* Align with the right side of the visual container */
+}
