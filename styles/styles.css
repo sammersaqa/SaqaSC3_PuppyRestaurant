@@ -1,3 +1,21 @@
+/* === VARIABLES === */
+:root {
+  --cream-bg: #f8f6f0;
+  --burgundy-adobe: #8b3c3c;
+  --wood-texture-color: #d1b899;
+  --fine-print-color: #6d6d6d;
+}
+
+/* === GLOBAL === */
+
+
+.wood-wrapper {
+  background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* ensures full vertical coverage */
+}
 
 
 /* === HEADER === */
@@ -5,14 +23,16 @@
   background: url('/RestaurantMockupFiles/assets/homeHero.jpg') center/cover no-repeat;
   height: 400px;
   position: relative;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 .logo-adobe {
@@ -25,29 +45,33 @@
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+.navbar-nav a,
 .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.navbar-nav a {
-  color: white;
-  text-transform: uppercase;
+  color: #5F002B !important;
+  font-size: 0.9rem;
   font-weight: 500;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  transition: color 0.3s;
 }
 
-.h2muzzles {
-    
+.navbar-nav .nav-link:hover {
+  color: #8A0040 !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
 }
 
 /* === MAIN CONTENT === */
-.content-wood-bg {
-  background: url(/RestaurantMockupFiles/assets/bgtexture.jpg) repeat;
-  padding: 40px 0;
+.homehero {
+  background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding: 400px 0;
 }
 
 .content-grid-adobe {
@@ -60,21 +84,18 @@
 }
 
 /* === FOOD IMAGES === */
-
 .food-left {
   height: 250px;
   background: url('/RestaurantMockupFiles/assets/homeSingle.jpg') left/cover no-repeat;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 10px 30px 0 0; /* Push away from text block */
+  margin: 10px 30px 0 0;
 }
-
-
 
 /* === TEXT BLOCK === */
 .text-info-box {
   padding: 30px;
-  background-color: rgba(255,255,255,0.8);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .title-muzzle-adobe {
@@ -90,66 +111,33 @@
 }
 
 .fine-print-text {
-<<<<<<< HEAD
   font-size: 0.75rem;
   color: var(--fine-print-color);
 }
-=======
-    font-size: 0.7rem;
-    color: var(--fine-print-color);
-}
 
-/* --- Page Nav and Copyright (Outside Grid) --- */
+/* === FOOTER === */
 .page-nav-controls-adobe {
-    text-align: center;
-    padding: 30px 0 10px;
+  text-align: center;
+  padding: 30px 0 10px;
 }
+
 .page-count-adobe {
-    font-size: 0.8rem;
-    color: var(--fine-print-color);
+  font-size: 0.8rem;
+  color: var(--fine-print-color);
 }
+
 .copyright-adobe {
-    text-align: right;
-    font-size: 0.7rem;
-    color: var(--fine-print-color);
-    padding-bottom: 20px;
-    padding-right: 50px; /* Align with the right side of the visual container */
+  text-align: right;
+  font-size: 0.7rem;
+  color: var(--fine-print-color);
+  padding-bottom: 20px;
+  padding-right: 50px;
 }
 
-body {
-      background-image: url('./RestaurantMockupFiles/assets/wood-background.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-  
-    .navbar {
-      background-color: rgba(255, 255, 255, 0.2); 
-      backdrop-filter: blur(5px); 
-    }
-
-    /* Navbar link color */
-    .navbar-nav .nav-link {
-      color: #5F002B !important;
-      font-weight: 500;
-    }
-
-    /* Navbar link hover color */
-    .navbar-nav .nav-link:hover {
-      color: #8A0040 !important;
-    }
-
-    .navbar-brand img {
-      height: 50px;
-      width: auto;
-    }
-
-    .dosis-Fugaz {
+/* === CUSTOM FONT === */
+.dosis-Fugaz {
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
 }
-
->>>>>>> 9ccb95daea04dc2eaab6935199c7515e74381ce2
