@@ -6,6 +6,10 @@
   --fine-print-color: #6d6d6d;
 }
 
+body {
+  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+}
+
 /* === GLOBAL === */
 
 
