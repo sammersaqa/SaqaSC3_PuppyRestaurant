@@ -50,7 +50,6 @@ h1 {
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     transition: color 0.3s;
 }
 
@@ -139,3 +138,40 @@ h1 {
     padding-bottom: 20px;
     padding-right: 50px; /* Align with the right side of the visual container */
 }
+
+body {
+      background-image: url('./RestaurantMockupFiles/assets/wood-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(5px); 
+    }
+
+    /* Navbar link color */
+    .navbar-nav .nav-link {
+      color: #5F002B !important;
+      font-weight: 500;
+    }
+
+    /* Navbar link hover color */
+    .navbar-nav .nav-link:hover {
+      color: #8A0040 !important;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+
+    .dosis-Fugaz {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
