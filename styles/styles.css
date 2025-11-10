@@ -128,3 +128,22 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
+
+/* === MENU PAGE === */
+
+/* Background texture */
+.menu-background {
+    /* Use a high-resolution, light tan/parchment image for the background */
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-size: cover;
+    padding: 50px 0; /* Add vertical spacing */
+}
+
+/* Image containers */
+.menu-image-container {
+    height: 150px; /* Example height */
+    overflow: hidden;
+    /* Images should span the full width of their column */
+}
