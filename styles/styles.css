@@ -21,19 +21,16 @@
   color: var(--burgundy-adobe);
 }
 
-<<<<<<< HEAD
 .navbar-nav {
   list-style: none;
   display: flex;
   gap: 20px;
-=======
 .navbar-nav .nav-link {
     color: white !important;
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s;
->>>>>>> 9ccb95daea04dc2eaab6935199c7515e74381ce2
 }
 
 .navbar-nav a {
