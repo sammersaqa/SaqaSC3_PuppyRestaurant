@@ -141,9 +141,46 @@ body {
     padding: 50px 0; /* Add vertical spacing */
 }
 
-/* Image containers */
-.menu-image-container {
-    height: 150px; /* Example height */
-    overflow: hidden;
-    /* Images should span the full width of their column */
+/* --- Menu Content Styling (styles.css) --- */
+
+/* 1. Add clear background, borders, and spacing to each block */
+.menu-section-block {
+    /* Each menu block needs a distinct white background */
+    background-color: white; 
+    
+    /* Add a subtle shadow for depth, making them look like separate cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    /* Optional: Add a subtle border */
+    border: 1px solid #e0e0e0;
+    
+    /* Add internal padding to separate content from the block edges */
+    padding-bottom: 20px; 
+    
+    /* Crucial: Ensure the block takes up its space clearly. 
+       The Bootstrap g-4 class on the rows/columns will handle external spacing. */
+}
+
+/* 2. Style the Menu Header Image and Title */
+.menu-header-image {
+    /* Crucial: This scales the image to fill the container without distortion */
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.section-heading {
+    /* Using the maroon color and center alignment from the Adobe design */
+    color: #9F5B68;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* 3. Ensure the main content container limits the width, matching the Adobe layout */
+.menu-grid-container {
+    /* Setting a max-width ensures the content remains centered and doesn't span the whole page width. 
+       Adobe viewport was 1020px, the grid is smaller. 900px is a good estimate. */
+    max-width: 900px;
 }
