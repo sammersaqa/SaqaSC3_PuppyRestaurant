@@ -1,0 +1,149 @@
+/* === VARIABLES === */
+:root {
+  --cream-bg: #f8f6f0;
+  --burgundy-adobe: #8b3c3c;
+  --wood-texture-color: #d1b899;
+  --fine-print-color: #6d6d6d;
+}
+
+body {
+  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+}
+
+/* === GLOBAL === */
+
+
+.wood-wrapper {
+  background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* ensures full vertical coverage */
+}
+
+
+/* === HEADER === */
+.hero-header {
+  background: url('/RestaurantMockupFiles/assets/homeHero.jpg') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.logo-adobe {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  color: var(--burgundy-adobe);
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav a,
+.navbar-nav .nav-link {
+  color: #5F002B !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8A0040 !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+/* === MAIN CONTENT === */
+.homehero {
+  background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding: 400px 0;
+}
+
+.imgSingles {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.content-grid-adobe {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-box {
+  padding: 20px;
+}
+
+.description-text-adobe {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.fine-print-text {
+  font-size: 0.75rem;
+  color: var(--fine-print-color);
+}
+
+/* === FOOTER === */
+.page-nav-controls-adobe {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.page-count-adobe {
+  font-size: 0.8rem;
+  color: var(--fine-print-color);
+}
+
+.copyright-adobe {
+  text-align: right;
+  font-size: 0.7rem;
+  color: var(--fine-print-color);
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+/* === CUSTOM FONT === */
+.dosis-Fugaz {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* === MENU PAGE === */
+
+/* Background texture */
+.menu-background {
+    /* Use a high-resolution, light tan/parchment image for the background */
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-size: cover;
+    padding: 50px 0; /* Add vertical spacing */
+}
+
+/* Image containers */
+.menu-image-container {
+    height: 150px; /* Example height */
+    overflow: hidden;
+    /* Images should span the full width of their column */
+}
