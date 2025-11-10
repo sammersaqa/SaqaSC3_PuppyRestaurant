@@ -120,6 +120,15 @@ height: 360px;
   padding-right: 50px;
 }
 
+.copyleft-adobe {
+  text-align: left;
+  font-size: 0.7rem;
+  color: var(--fine-print-color);
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+
 /* === CUSTOM FONT === */
 .dosis-Fugaz {
   font-family: "Dosis", sans-serif;
@@ -155,3 +164,21 @@ height: 360px;
   margin: auto;
 }
 
+
+
+/* === MENU PAGE === */
+
+/* Background texture */
+.menu-background {
+    /* Use a high-resolution, light tan/parchment image for the background */
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-size: cover;
+    padding: 50px 0; /* Add vertical spacing */
+}
+
+/* Image containers */
+.menu-image-container {
+    height: 150px; /* Example height */
+    overflow: hidden;
+    /* Images should span the full width of their column */
+}
