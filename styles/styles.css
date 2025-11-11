@@ -277,70 +277,99 @@ body {
 
 
 /* =========================================================
-   Our Menu PAGE
+    Our Menu PAGE STYLES
 ========================================================= */
 
-.catering-section {
-  background-color: white; /* keep your wood background visible */
-  padding: 60px 0;
+/* The outer container for the menu items, similar to .catering-page-container */
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.menu {
-  background-color: white;
+/* Style for the main "Our Menu" title inside the banner */
+.menu h1 {
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #980051; /* Assuming this is the accent color from the design */
 }
 
-.border {
-  border-bottom:#980051 ;
-  color: #980051;
+/* Each menu panel (the white card containing an image and text) */
+.menu-panel {
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    /* Subtle shadow for the card effect */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
+    /* Adding space below each panel for better separation */
+    margin-bottom: 25px; 
 }
 
-.catering-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Image at the top of each menu panel */
+.menu-panel img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover;
 }
 
-/* Add spacing between the 4 panels */
-.catering-panels {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px; /* <— this adds the spacing between boxes */
+/* The content area inside the panel where text and prices reside */
+.menu-content.p-4 {
+    padding: 25px !important;
 }
 
-/* Each box */
-.catering-panel {
-  background-color: #ffffff;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+/* Primary title (e.g., "Sandwiches", "Seafood") */
+.menu-title {
+    font-family: 'Fugaz One', sans-serif;
+    color: #980051;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
-.catering-panel img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+/* Secondary subtitle (e.g., "All sandwiches come...") */
+.menu-subtitle {
+    font-family: 'Montauk', serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
 }
 
-.catering-panel-content {
-  padding: 25px;
+/* Styling for the individual menu item row (Dish Name/Price) */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* The separator line under each item */
+    border-bottom: 1px solid #980051; 
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.catering-panel-content h3 {
-  font-family:  "Fugaz One", sans-serif;
-  font-weight: 600;
-  color: #1A1B26;
-  margin-bottom: 8px;
-  font-size: 1.3rem;
+.menu-text {
+    flex-grow: 1;
+    margin-right: 15px;
 }
 
-.catering-panel-content p {
-  font-family: "Fugaz One", sans-serif;;
-  color: #333;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+.menu-text h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.2rem;
 }
 
+.menu-text p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.menu-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #980051; /* Price color from design */
+}
 
 /* * ===================Catering page container================== */
 
