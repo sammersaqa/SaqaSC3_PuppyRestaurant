@@ -77,8 +77,8 @@ body {
   padding: 400px 0;
 }
 .imgSingles {
-  width: 100%;
-  height: auto; /* maintain aspect ratio */
+  width: 700px;
+  height: 420px; /* maintain aspect ratio */
   border-radius: 10px;
 }
 
