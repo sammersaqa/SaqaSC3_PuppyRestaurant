@@ -12,6 +12,13 @@ body {
 
 /* === GLOBAL === */
 
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 .wood-wrapper {
   background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
@@ -266,4 +273,131 @@ body {
 
 .text-color{
   color: #5F002B;
+}
+
+
+/* =========================================================
+   CATERING PAGE
+========================================================= */
+
+.catering-section {
+  background-color: white; /* keep your wood background visible */
+  padding: 60px 0;
+}
+
+.border {
+  border-bottom:#980051 ;
+  color: #980051;
+}
+
+.catering-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Add spacing between the 4 panels */
+.catering-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px; /* <— this adds the spacing between boxes */
+}
+
+/* Each box */
+.catering-panel {
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.catering-panel img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.catering-panel-content {
+  padding: 25px;
+}
+
+.catering-panel-content h3 {
+  font-family:  "Fugaz One", sans-serif;
+  font-weight: 600;
+  color: #1A1B26;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.catering-panel-content p {
+  font-family: "Fugaz One", sans-serif;;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Menu Item Styling (Updated) --- */
+
+.menu-item {
+    /* Remove the dashed border from the main wrapper */
+    border-bottom: none; 
+    /* Add padding/margin to maintain spacing between items */
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+
+/* 1. Style the single line containing Name, Dashes, and Price */
+.item-header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align elements to the bottom for the line effect */
+    margin-bottom: 5px; /* Space between the header line and the description text */
+}
+
+/* 2. Create the Dashed Line Spacer */
+.item-dash-spacer {
+    /* The spacer must take all available horizontal space */
+    flex-grow: 1; 
+    
+    /* CRUCIAL: Add the dashed line border */
+    border-bottom: 1px dashed #9F5B68; /* Maroon/Wine color */
+    
+    /* Add minimal height or padding to ensure the line is visible */
+    height: 1em; /* Pushes the line down slightly from the h5/price text */
+    margin: 0 10px; /* Space between the h5/price and the line */
+}
+
+/* 3. Style and fine-tune text elements */
+.menu-item h5 {
+    /* Ensure the h5 text is aligned with the spacer/price */
+    margin-bottom: 0; 
+    flex-shrink: 0;
+    /* (Keep existing font/color styles) */
+}
+
+.menu-item .menu-price {
+    /* Align price and ensure it doesn't wrap */
+    flex-shrink: 0; 
+    /* (Keep existing font/color styles) */
+}
+
+.menu-item p {
+    /* Ensure description is below the line and spans full width */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* (Keep existing font/color styles) */
+}
+
+/* Price styling (optional if you have inline prices) */
+.catering-panel-content span.price {
+  font-weight: 700;
+  color: #A62326;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .catering-panels {
+    grid-template-columns: 1fr;
+  }
 }
