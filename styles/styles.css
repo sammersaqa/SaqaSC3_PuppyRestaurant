@@ -1,319 +1,168 @@
-/* === VARIABLES === */
+/* =========================================================
+   === VARIABLES === 
+========================================================= */
 :root {
-  --cream-bg: #f8f6f0;
-  --burgundy-adobe: #8b3c3c;
-  --wood-texture-color: #d1b899;
-  --fine-print-color: #6d6d6d;
+    --cream-bg: #f8f6f0;
+    --burgundy-adobe: #8b3c3c;
+    --primary-accent: #980051;
+    --fine-print-color: #6d6d6d;
 }
+
+/* =========================================================
+   === GLOBAL STYLES === 
+========================================================= */
 
 body {
-  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
 }
-
-/* === GLOBAL === */
 
 .fugaz-one-regular {
-  font-family: "Fugaz One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-
+.dosis-Fugaz {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .wood-wrapper {
-  background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh; /* ensures full vertical coverage */
+    background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 
-
-/* === HEADER === */
-.hero-header {
-  background: url('/RestaurantMockupFiles/assets/homeHero.jpg') center/cover no-repeat;
-  height: 400px;
-  position: relative;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
+/* --- Navbar --- */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
-.logo-adobe {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 3rem;
-  color: var(--burgundy-adobe);
-}
-
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.navbar-brand img {
+    height: 50px;
+    width: auto;
 }
 
 .navbar-nav a,
 .navbar-nav .nav-link {
-  color: #5F002B !important;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: color 0.3s;
+    color: #5F002B !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #8A0040 !important;
+    color: #8A0040 !important;
 }
 
-.navbar-brand img {
-  height: 50px;
-  width: auto;
-}
-
-/* === MAIN CONTENT === */
-.homehero {
-  background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
-  background-size: cover;
-  height: 800px;
-  padding: 400px 0;
-}
-.imgSingles {
-  width: 700px;
-  height: 420px; /* maintain aspect ratio */
-  border-radius: 10px;
-}
-
-.content-grid-adobe {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.content-box {
-  padding: 20px;
-}
-
-.description-text-adobe {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-.fine-print-text {
-  font-size: 0.75rem;
-  color: var(--fine-print-color);
-}
-
-/* === FOOTER === */
-.page-nav-controls-adobe {
-  text-align: center;
-  padding: 30px 0 10px;
-}
-
-.page-count-adobe {
-  font-size: 0.8rem;
-  color: var(--fine-print-color);
-}
-
-.copyright-adobe {
-  text-align: right;
-  font-size: 0.7rem;
-  color: var(--fine-print-color);
-  padding-bottom: 20px;
-  padding-right: 50px;
-}
-
-.copyleft-adobe {
-  text-align: left;
-  font-size: 0.7rem;
-  color: var(--fine-print-color);
-  padding-bottom: 20px;
-  padding-right: 50px;
-}
-
-
-/* === CUSTOM FONT === */
-.dosis-Fugaz {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.homepage-splash-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* two columns */
-  gap: 2rem;
-  align-items: start; /* align items to the top */
-  justify-content: center;
-  margin: 3rem auto; /* spacing from top and centered */
-  max-width: 1200px;
-}
-
-.homepage-splash-container img{
- 
-  margin: auto;
-  
- 
-}
-
-.splash-text-box {
-  color: #5F002B;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  font-family: 'Montauk', sans-serif;
-}
-
-
-
-/* === MENU PAGE === */
-
-/* Background texture */
-.menu-background {
-    /* Use a high-resolution, light tan/parchment image for the background */
-    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    background-size: cover;
-    padding: 50px 0; /* Add vertical spacing */
-}
-
-/* Image containers */
-.menu-image-container {
-    height: 150px; /* Example height */
-    overflow: hidden;
-    /* Images should span the full width of their column */
-}
-
-/* --- Photos Page Styling --- */
-
-/* Use the maroon color and Fugaz One font from the menu design */
-.photo-title {
-    font-family: 'Fugaz One', sans-serif; 
-    font-size: 40px; 
-    color: #9F5B68; /* Using the primary accent color */
-    letter-spacing: 2px;
-}
-
-.photo {
-  background-color: white;
-}
-
-/* 1. Define the Grid Container */
-.photo-grid {
-    display: grid;
-    
-    /* Set up 4 columns of equal width (1fr = 1 fractional unit) */
-    grid-template-columns: repeat(4, 1fr); 
-    
-    /* Add gaps between the grid items (both rows and columns) */
-    gap: 15px; 
-    
-    /* MODIFIED: Increased max-width to make the whole grid larger */
-    max-width: 1000px; /* Increased from 900px */
-    margin: 0 auto; /* Center the grid container */
-    
-    /* Give the grid a white background as seen in the Adobe shot */
-    background-color: white; 
-    padding: 30px; /* Increased padding slightly */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 2. Style the Individual Images */
-.grid-image {
-    width: 100%;
-    /* MODIFIED: Increased height for larger, more impactful images */
-    height: 200px; /* Increased from 180px */
-    
-    /* Crucial: Scale the image to fill the fixed container, cropping if necessary */
-    object-fit: cover; 
-    
-    display: block; /* Removes any extra space below the image */
-}
-/* --- Responsiveness (Crucial for a gallery!) --- */
-
-@media (max-width: 992px) {
-    /* On tablets, switch to a 3-column layout */
-    .photo-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    /* On mobile, switch to a 2-column layout */
-    .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 10px;
-        gap: 10px;
-    }
-    .grid-image {
-        height: 150px; /* Reduce height on smaller screens */
-    }
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  color: #fff; 
-}
-
-.footer-logo,
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+/* --- Footer --- */
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 50px 20px 0; 
 }
 
 .logo-small {
-  width: 60px;
-  height: auto;
+    width: 60px;
+    height: auto;
+}
+
+.copyright-adobe {
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
 }
 
 .text-color{
-  color: #5F002B;
+    color: #5F002B;
 }
 
 /* =========================================================
-    Our Menu PAGE STYLES (Blocks Touch Horizontally & Equal Height)
+   === HOME PAGE STYLES === 
 ========================================================= */
 
-/* 1. Menu Panel Style (APPLY WHITE BACKGROUND, SHADOW, and FLEXBOX) */
+.homehero {
+    background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding: 400px 0;
+}
+
+.homepage-splash-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.homepage-splash-container img{
+    margin: auto;
+}
+
+.splash-text-box {
+    color: #5F002B;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: 'Montauk', sans-serif;
+}
+
+
+/* =========================================================
+   === MENU PAGE STYLES === 
+========================================================= */
+
+.menu h1 {
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #980051;
+}
+
+.menu {
+  background-color: white;
+}
+
 .menu-panel {
     background-color: #ffffff;
     border-radius: 4px; 
     overflow: hidden; 
     box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
     
-    /* Creates the vertical gap between the top row and bottom row */
     margin-bottom: 25px; 
     
-    /* CRITICAL FOR EQUAL HEIGHT */
     height: 100%; 
     display: flex; 
     flex-direction: column;
 }
 
-/* 2. Image at the top of each menu panel */
 .menu-panel img {
     width: 100%;
     height: 250px; 
     object-fit: cover;
-    flex-shrink: 0; /* Prevents image from shrinking */
+    flex-shrink: 0;
 }
 
-/* 3. Text content padding */
 .menu-content.p-4 {
     padding: 25px !important;
-    /* CRITICAL FOR EQUAL HEIGHT: Allows content area to fill remaining space */
     flex-grow: 1; 
 }
 
-/* 4. Title Styling */
 .menu-title {
     font-family: 'Fugaz One', sans-serif;
     color: #980051;
@@ -330,26 +179,32 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-/* 5. Menu Item Styling */
 .menu-item {
+    border-bottom: none; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+
+.menu-item-line {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 1px solid #980051; 
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5px; 
 }
 
-.menu-text {
-    flex-grow: 1;
-    margin-right: 15px;
+.item-dash-spacer {
+    flex-grow: 1; 
+    border-bottom: 1px dashed var(--primary-accent);
+    height: 1em; 
+    margin: 0 10px;
 }
 
 .menu-text h5 {
+    margin-bottom: 0; 
+    flex-shrink: 0;
     font-size: 1.1rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 0.2rem;
 }
 
 .menu-text p {
@@ -361,80 +216,46 @@ body {
 .menu-price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #980051; 
+    color: var(--primary-accent); 
+    flex-shrink: 0;
 }
 
-.menu h1 {
-    /* Style for the main "Our Menu" title inside the banner */
-    background-color: white;
-    padding: 10px 20px;
-    display: inline-block;
-    color: #980051;
-}
-
-.menu {
-  background-color: white;
-}
-
-/* You must also DELETE the old .menu-inner-block and .menu-inner-block img rules from your CSS file. */
-
-/* * ===================Catering page container================== */
-
-/* --- Catering Page Container --- */
+/* =========================================================
+   === CATERING PAGE STYLES === 
+========================================================= */
 
 .catering-page-container {
-    /* Limit the overall content width to match the design */
     max-width: 1100px; 
     margin: 0 auto;
 }
 
-/* 1. Full Width Hero Image */
+.cater {
+  background-color: white;
+}
+
 .catering-image-full {
     width: 100%;
-    /* The hero image looks tall, around 350-400px */
     height: 380px; 
     object-fit: cover;
     display: block;
 }
 
-/* 2. Middle Section Styling (Image/Text Block) - FIXED */
-
-/* Delete the old .catering-image-block and .catering-text-block styles from your CSS file.
-   They should be empty/deleted as all styling has moved to the inner block. */
-
-/* 1. Apply styling to the NEW INNER WRAPPER for unified look and shadow */
 .catering-inner-block {
     background-color: white; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    /* Ensures the inner block stretches to fill the column height */
     height: 100%; 
 }
 
-/* 2. Style the Image to Fill its NEW Container */
 .catering-image-fill {
-    /* CRUCIAL: Image fills the inner wrapper height */
     width: 100%;
     height: 100%; 
     object-fit: cover;
     display: block;
 }
 
-/* 3. Text box styles (padding handled by p-4 in HTML) */
-.catering-text-box {
-    /* Ensure the text box wrapper uses the full height of the inner block */
-    height: 100%; 
-}
-
 .catering-text-box h2 {
     font-family: 'Montauk', serif; 
     color: #333;
-}
-
-/* --- End of Middle Section Fix --- */
-
-/* 3. Bottom Gallery Styling (KEEP THESE AS THEY ARE FINE) */
-.catering-gallery-item {
-    overflow: hidden; 
 }
 
 .catering-gallery-image {
@@ -443,67 +264,55 @@ body {
     object-fit: cover;
     display: block;
 }
-/* --- Menu Item Styling (Updated) --- */
 
-.menu-item {
-    /* Remove the dashed border from the main wrapper */
-    border-bottom: none; 
-    /* Add padding/margin to maintain spacing between items */
-    padding-bottom: 5px; 
-    margin-bottom: 15px; 
+/* =========================================================
+   === PHOTOS PAGE STYLES === 
+========================================================= */
+
+.photo-title {
+    font-family: 'Fugaz One', sans-serif; 
+    font-size: 40px; 
+    color: #9F5B68; 
+    letter-spacing: 2px;
 }
 
-/* 1. Style the single line containing Name, Dashes, and Price */
-.item-header-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; /* Align elements to the bottom for the line effect */
-    margin-bottom: 5px; /* Space between the header line and the description text */
+.photo {
+  background-color: white;
 }
 
-/* 2. Create the Dashed Line Spacer */
-.item-dash-spacer {
-    /* The spacer must take all available horizontal space */
-    flex-grow: 1; 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
     
-    /* CRUCIAL: Add the dashed line border */
-    border-bottom: 1px dashed #9F5B68; /* Maroon/Wine color */
+    max-width: 1000px; 
+    margin: 0 auto;
     
-    /* Add minimal height or padding to ensure the line is visible */
-    height: 1em; /* Pushes the line down slightly from the h5/price text */
-    margin: 0 10px; /* Space between the h5/price and the line */
+    background-color: white; 
+    padding: 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 3. Style and fine-tune text elements */
-.menu-item h5 {
-    /* Ensure the h5 text is aligned with the spacer/price */
-    margin-bottom: 0; 
-    flex-shrink: 0;
-    /* (Keep existing font/color styles) */
+.grid-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
 }
 
-.menu-item .menu-price {
-    /* Align price and ensure it doesn't wrap */
-    flex-shrink: 0; 
-    /* (Keep existing font/color styles) */
-}
-
-.menu-item p {
-    /* Ensure description is below the line and spans full width */
-    margin-top: 0;
-    margin-bottom: 0;
-    /* (Keep existing font/color styles) */
-}
-
-/* Price styling (optional if you have inline prices) */
-.catering-panel-content span.price {
-  font-weight: 700;
-  color: #A62326;
-}
-
-/* Responsive */
 @media (max-width: 992px) {
-  .catering-panels {
-    grid-template-columns: 1fr;
-  }
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+    .grid-image {
+        height: 150px;
+    }
 }
