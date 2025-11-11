@@ -369,6 +369,10 @@ body {
     color: #980051;
 }
 
+.menu {
+  background-color: white;
+}
+
 /* You must also DELETE the old .menu-inner-block and .menu-inner-block img rules from your CSS file. */
 
 /* * ===================Catering page container================== */
