@@ -341,7 +341,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* ===================Catering page container================== */
+//* * ===================Catering page container================== */
 
 /* --- Catering Page Container --- */
 
@@ -362,9 +362,16 @@ body {
 
 /* 2. Middle Section Styling (Image/Text Block) */
 
-.catering-image-block {
-    /* The image itself will handle the filling */
+/* The image block and text block MUST be styled identically to look like one unit */
+.catering-image-block,
+.catering-text-block {
+    /* The image itself will handle the filling, but the background needs to be white */
     background-color: white; 
+    /* NEW: Add the subtle shadow/border to frame the entire block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Ensure no padding/margin interferes with the seamless join */
+    margin: 0;
+    padding: 0;
 }
 
 .catering-image-fill {
@@ -375,12 +382,7 @@ body {
     display: block;
 }
 
-.catering-text-block {
-    /* This column is the wrapper for the white text box */
-    background-color: white; 
-    
-}
-
+/* Keep the text box wrapper */
 .catering-text-box {
     /* Use the text box for the internal white background and padding, 
        ensuring the image block height is matched via stretching the text block. */
@@ -406,7 +408,6 @@ body {
     object-fit: cover;
     display: block;
 }
-
 /* --- Menu Item Styling (Updated) --- */
 
 .menu-item {
