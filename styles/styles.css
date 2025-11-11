@@ -76,9 +76,10 @@ body {
   height: 800px;
   padding: 400px 0;
 }
-
 .imgSingles {
-height: 360px;
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  border-radius: 10px;
 }
 
 .content-grid-adobe {
@@ -136,17 +137,14 @@ height: 360px;
   font-weight: 400;
   font-style: normal;
 }
-
-.homepage-splash-container{
+.homepage-splash-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 2rem;
+  align-items: start; /* align items to the top */
   justify-content: center;
-  max-height: 6rem;
-  margin: auto;
-  margin-top: 3rem;
-  margin-left: 1rem;
- text-align:left; 
+  margin: 3rem auto; /* spacing from top and centered */
+  max-width: 1200px;
 }
 
 .homepage-splash-container img{
@@ -156,12 +154,12 @@ height: 360px;
  
 }
 
-.splash-text-box{
+.splash-text-box {
   color: #5F002B;
   background-color: white;
-  max-width: 950px;
-  font-family: 'Montauk';
-  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Montauk', sans-serif;
 }
 
 
@@ -181,4 +179,61 @@ height: 360px;
     height: 150px; /* Example height */
     overflow: hidden;
     /* Images should span the full width of their column */
+}
+
+.text-color {
+  color: #5F002B;
+}
+
+/* --- Footer Container --- */
+.footer-container {
+  margin-top: 50px; /* adds space above the footer */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* --- Footer Text (Left Side) --- */
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* --- Footer Logo + Copyright (Right Side) --- */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* --- Company Logo --- */
+.logo-small {
+  height: 14px; /* smaller image */
+  width: auto;
+  margin-bottom: 6px; /* spacing between logo and copyright */
+}
+
+/* --- Copyright text --- */
+.copyright-adobe {
+  font-size: 0.85rem;
+}
+
+/* --- Ensure footer stays below all content --- */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main,
+section {
+  flex: 1 0 auto; /* make sure content expands before footer */
+}
+
+footer,
+.footer-container {
+  flex-shrink: 0; /* footer stays at bottom */
 }
