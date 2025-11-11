@@ -194,8 +194,12 @@ body {
 .photo-title {
     font-family: 'Fugaz One', sans-serif; 
     font-size: 40px; 
-    color: #9F5B68; /* Using the primary accent color from the Menu page */
+    color: #9F5B68; /* Using the primary accent color */
     letter-spacing: 2px;
+}
+
+.photo {
+  background-color: white;
 }
 
 /* 1. Define the Grid Container */
@@ -206,30 +210,29 @@ body {
     grid-template-columns: repeat(4, 1fr); 
     
     /* Add gaps between the grid items (both rows and columns) */
-    gap: 15px; /* Adjust this value to change the spacing */
+    gap: 15px; 
     
-    /* Optional: Limit the max width of the gallery container */
-    max-width: 900px;
+    /* MODIFIED: Increased max-width to make the whole grid larger */
+    max-width: 1000px; /* Increased from 900px */
     margin: 0 auto; /* Center the grid container */
     
     /* Give the grid a white background as seen in the Adobe shot */
     background-color: white; 
-    padding: 20px;
+    padding: 30px; /* Increased padding slightly */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 2. Style the Individual Images */
 .grid-image {
     width: 100%;
-    /* Set a fixed height for all images to ensure the 3x4 grid alignment is perfect */
-    height: 180px; 
+    /* MODIFIED: Increased height for larger, more impactful images */
+    height: 200px; /* Increased from 180px */
     
     /* Crucial: Scale the image to fill the fixed container, cropping if necessary */
     object-fit: cover; 
     
     display: block; /* Removes any extra space below the image */
 }
-
 /* --- Responsiveness (Crucial for a gallery!) --- */
 
 @media (max-width: 992px) {
