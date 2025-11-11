@@ -341,7 +341,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-//* * ===================Catering page container================== */
+
+/* * ===================Catering page container================== */
 
 /* --- Catering Page Container --- */
 
@@ -363,17 +364,34 @@ body {
 /* 2. Middle Section Styling (Image/Text Block) */
 
 /* The image block and text block MUST be styled identically to look like one unit */
-.catering-image-block,
-.catering-text-block {
-    /* The image itself will handle the filling, but the background needs to be white */
+/* --- New/Updated CSS for Middle Section --- */
+
+.catering-image-block {
     background-color: white; 
-    /* NEW: Add the subtle shadow/border to frame the entire block */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    /* Ensure no padding/margin interferes with the seamless join */
+    /* Remove padding/margin from here if you use p-0 in HTML */
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    
 }
 
+.catering-text-block {
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 0;
+    /* NEW: Add a small space (like 5px or 10px) to the left side of the text block */
+    padding-left: 10px; 
+    padding-right: 0; /* Ensures the g-3 space isn't doubled */
+}
+
+/* Ensure the inner text box still has its top/bottom padding */
+.catering-text-box {
+    padding-top: 1.5rem; /* Equivalent to p-4 top padding */
+    padding-bottom: 1.5rem; /* Equivalent to p-4 bottom padding */
+    padding-right: 1.5rem; /* Equivalent to p-4 right padding */
+    padding-left: 0; /* Zero out the left padding here since we added it to the block */
+    height: 100%;
+}
 .catering-image-fill {
     /* CRUCIAL: Makes the image match the height of the adjacent text box */
     width: 100%;
@@ -408,6 +426,7 @@ body {
     object-fit: cover;
     display: block;
 }
+
 /* --- Menu Item Styling (Updated) --- */
 
 .menu-item {
