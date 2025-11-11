@@ -275,50 +275,42 @@ body {
   color: #5F002B;
 }
 
-
 /* =========================================================
-    Our Menu PAGE STYLES
+    Our Menu PAGE STYLES (Blocks Touch Horizontally & Equal Height)
 ========================================================= */
 
-/* The outer container for the menu items, similar to .catering-page-container */
-.menu-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Style for the main "Our Menu" title inside the banner */
-.menu h1 {
-    background-color: white;
-    padding: 10px 20px;
-    display: inline-block;
-    color: #980051; /* Assuming this is the accent color from the design */
-}
-
-/* Each menu panel (the white card containing an image and text) */
+/* 1. Menu Panel Style (APPLY WHITE BACKGROUND, SHADOW, and FLEXBOX) */
 .menu-panel {
     background-color: #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
-    /* Subtle shadow for the card effect */
+    border-radius: 4px; 
+    overflow: hidden; 
     box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
-    /* Adding space below each panel for better separation */
+    
+    /* Creates the vertical gap between the top row and bottom row */
     margin-bottom: 25px; 
+    
+    /* CRITICAL FOR EQUAL HEIGHT */
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
 }
 
-/* Image at the top of each menu panel */
+/* 2. Image at the top of each menu panel */
 .menu-panel img {
     width: 100%;
-    height: 250px; /* Fixed height for consistency */
+    height: 250px; 
     object-fit: cover;
+    flex-shrink: 0; /* Prevents image from shrinking */
 }
 
-/* The content area inside the panel where text and prices reside */
+/* 3. Text content padding */
 .menu-content.p-4 {
     padding: 25px !important;
+    /* CRITICAL FOR EQUAL HEIGHT: Allows content area to fill remaining space */
+    flex-grow: 1; 
 }
 
-/* Primary title (e.g., "Sandwiches", "Seafood") */
+/* 4. Title Styling */
 .menu-title {
     font-family: 'Fugaz One', sans-serif;
     color: #980051;
@@ -326,7 +318,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Secondary subtitle (e.g., "All sandwiches come...") */
 .menu-subtitle {
     font-family: 'Montauk', serif;
     font-size: 1rem;
@@ -336,12 +327,11 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-/* Styling for the individual menu item row (Dish Name/Price) */
+/* 5. Menu Item Styling */
 .menu-item {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* The separator line under each item */
     border-bottom: 1px solid #980051; 
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
@@ -368,8 +358,18 @@ body {
 .menu-price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #980051; /* Price color from design */
+    color: #980051; 
 }
+
+.menu h1 {
+    /* Style for the main "Our Menu" title inside the banner */
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #980051;
+}
+
+/* You must also DELETE the old .menu-inner-block and .menu-inner-block img rules from your CSS file. */
 
 /* * ===================Catering page container================== */
 
