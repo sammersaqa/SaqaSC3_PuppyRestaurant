@@ -28,11 +28,17 @@ body {
 .footer-left {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   gap: 3px;              
   font-size: 0.70rem;
   transform: translate(32px); 
   margin-left: 0;         
   margin-top: 0;
+=======
+  gap: 3px;
+  font-size: 0.9rem;
+   color: #5F002B;
+>>>>>>> f20824bd05b768e9951f546d343f3cabdb3de896
 }
 
 /* Right Side: Logo + Text */
@@ -42,9 +48,14 @@ body {
   align-items: flex-end;
   text-align: right;
   gap: 2px;
+<<<<<<< HEAD
   transform: translate(-32px); 
   margin-right: 0;
   margin-top: 0;
+=======
+  transform: translateY(-4px);
+   color: #5F002B;
+>>>>>>> f20824bd05b768e9951f546d343f3cabdb3de896
 }
 
 .logo-small {
