@@ -33,26 +33,71 @@
     gap: 2rem;
     align-items: start;
     justify-content: center;
-    margin: 3rem auto;
+    margin: auto;
     max-width: 1200px;
 }
 .about-splash-container{
   display: grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:repeat(2, .5fr);
   text-align: left;
-
+  color: #5F002B;
+  
+  max-width: 1624.5px;
+  
+  
+  
+  max-height: 674.5px;
 }
 
 .about-splash-container h6{
   font-family: 'Fugaz One';
+  font-size: 35px;
+  text-align: left;
+
+}
+.about-text{
+  background-color: white;
+
+  
+  
+  
+  
+  
 }
 
+.about-text p{
+  font-size: 18px;
+  max-height: 674.5px;
+  
+  font-family: 'Montauk';
+  
+  
+}
 
 .about-splash-container img{
   display: grid;
- 
-  margin: auto;
-  justify-content: center;
+  
+  
+  
   height: 674.5px;
   width: 674.5px;
 }
+
+
+.team-header{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fugaz One';
+  font-size: 50px;
+  
+}
+.team-header h6{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fugaz One';
+  font-size: 35px;
+  color: #5F002B;
+}
+
