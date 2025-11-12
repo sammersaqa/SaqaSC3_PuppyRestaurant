@@ -16,6 +16,13 @@
 }
 
 
+/* --- Story Splash Text Container Styles (Desktop/Tablet) --- */
+.about-story-text {
+  
+    padding-left: 30px; 
+    padding-right: 15px; 
+}
+
 
 .about-story-text h6 {
     font-family: 'Fugaz One', sans-serif;
@@ -25,43 +32,49 @@
     margin-top: 0;
 }
 
-.aboutPage-chat-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    justify-content: center;
-    margin: auto;
-    max-width: 1200px;
-}
-.about-splash-container{
-  display: grid;
-  grid-template-columns:repeat(2, .5fr);
-  text-align: left;
-  color: #5F002B;
-  
-  max-width: 1624.5px;
-  
-  
-  
-  max-height: 674.5px;
-}
 
-.about-splash-container h6{
-  font-family: 'Fugaz One';
-  font-size: 35px;
-  text-align: left;
-
-/* Style for the paragraph text */
 .about-story-text p {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     font-size: 1rem;
     color: #333;
-  }
-  
-  /* Mobile Responsiveness (Screen width up to 767px) */
-  @media (max-width: 767px) {
+}
+
+
+.about-text {
+    background-color: white;
+}
+.about-text p {
+    font-size: 18px; 
+    max-height: 674.5px; 
+    font-family: 'Montauk', serif;
+}
+
+/* --- Team Zone Styles --- */
+.The-Team-grid {
+    padding: 40px 15px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.team-header {
+    
+    justify-content: center;
+    text-align: center;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 50px;
+    background-color: white;
+    color: #5F002B;
+}
+
+
+.team-header h6 {
+    font-size: 35px;
+    color: #5F002B;
+}
+
+/* --- Mobile Responsiveness (Screen width up to 767px) --- */
+@media (max-width: 767px) {
     
     .about-splash-section {
       padding-top: 30px !important;
@@ -84,10 +97,10 @@
       font-size: 0.95rem; 
     }
   }
-}
-  
-  /* Tablet Responsiveness (Screen width between 768px and 991px) */
-  @media (min-width: 768px) and (max-width: 991px) {
+
+
+/* --- Tablet Responsiveness (Screen width between 768px and 991px) --- */
+@media (min-width: 768px) and (max-width: 991px) {
     
     .about-story-text {
         padding-left: 20px; 
