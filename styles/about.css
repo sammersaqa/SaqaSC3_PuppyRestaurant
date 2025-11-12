@@ -101,3 +101,7 @@
   color: #5F002B;
 }
 
+.team-grid{
+  display: grid;
+  grid-template-rows: repeat(2, 3fr);
+}
