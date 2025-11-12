@@ -46,7 +46,7 @@
   font-family: 'Fugaz One';
   font-size: 35px;
   text-align: left;
-
+}
 /* Style for the paragraph text */
 .about-story-text p {
     font-family: 'Dosis', sans-serif;
@@ -117,6 +117,9 @@
   
   height: 674.5px;
   width: 674.5px;
+}
+
+
 .The-Team-grid {
     padding: 40px 15px;
     background-color: #eee;
