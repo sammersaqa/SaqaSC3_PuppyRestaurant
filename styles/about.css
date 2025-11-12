@@ -6,11 +6,23 @@
     border-radius: 4px;
 }
 
-/* Style for the Story Text container */
+.about-grid{
+    height: 100th;
+    display: grid;
+    grid-template-columns: 100px 200px ;
+    background-color: aquamarine;
+    margin: auto;
+    justify-content: center;
+}
+
+
+/* --- Story Splash Text Container Styles (Desktop/Tablet) --- */
 .about-story-text {
+  
     padding-left: 30px; 
     padding-right: 15px; 
 }
+
 
 .about-story-text h6 {
     font-family: 'Fugaz One', sans-serif;
@@ -20,33 +32,12 @@
     margin-top: 0;
 }
 
-.aboutPage-chat-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    justify-content: center;
-    margin: auto;
-    max-width: 1200px;
-}
-.about-splash-container{
-  display: grid;
-  grid-template-columns:repeat(2, .5fr);
-  text-align: left;
-  color: #5F002B;
-  
-  max-width: 1624.5px;
-  
-  
-  
-  max-height: 674.5px;
-}
 
 .about-splash-container h6{
   font-family: 'Fugaz One';
   font-size: 35px;
   text-align: left;
-
+}
 /* Style for the paragraph text */
 .about-story-text p {
     font-family: 'Dosis', sans-serif;
@@ -55,32 +46,66 @@
     color: #333;
 }
 
-/* Mobile Responsiveness (Screen width up to 767px) */
+
+.about-text {
+    background-color: white;
+}
+.about-text p {
+    font-size: 18px; 
+    max-height: 674.5px; 
+    font-family: 'Montauk', serif;
+}
+
+/* --- Team Zone Styles --- */
+.The-Team-grid {
+    padding: 40px 15px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.team-header {
+    
+    justify-content: center;
+    text-align: center;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 50px;
+    background-color: white;
+    color: #5F002B;
+}
+
+
+.team-header h6 {
+    font-size: 35px;
+    color: #5F002B;
+}
+
+/* --- Mobile Responsiveness (Screen width up to 767px) --- */
 @media (max-width: 767px) {
     
     .about-splash-section {
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
     }
     
     .about-story-text {
-        /* Reset padding for full-width view */
-        padding-left: 15px; 
-        padding-right: 15px;
-        margin-top: 20px; /* Adds space between the stacked image and text */
+      /* Reset padding for full-width view */
+      padding-left: 15px; 
+      padding-right: 15px;
+      margin-top: 20px; /* Adds space between the stacked image and text */
     }
-
+    
     .about-story-text h6 {
-        font-size: 1.5rem; /* Smaller title on mobile */
-        text-align: center; /* Center the title on mobile */
+      font-size: 1.5rem; /* Smaller title on mobile */
+      text-align: center; /* Center the title on mobile */
     }
-
+    
     .about-story-text p {
-        font-size: 0.95rem; 
+      font-size: 0.95rem; 
     }
-}
+  }
 
-/* Tablet Responsiveness (Screen width between 768px and 991px) */
+
+/* --- Tablet Responsiveness (Screen width between 768px and 991px) --- */
 @media (min-width: 768px) and (max-width: 991px) {
     
     .about-story-text {
@@ -101,44 +126,52 @@
   
 }
 
-<<<<<<< HEAD
-/* team Zone*/
-.The-Team-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 3;
-<<<<<<< HEAD
-=======
-
-=======
 .about-text p{
   font-size: 18px;
   max-height: 674.5px;
-  
+  background-color: white;
   font-family: 'Montauk';
   
   
 }
 
+.StoryGrillBox{
+    width: 100%;
+    height: 500px;
+    justify-content:flex-end;
+    background-color:black;
+
+}
+.aboutrow{
+   display: flex;
+   justify-content:flex-end; 
+    align-items:flex-end;
+}
+
+.aboutPage-chat-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
 .about-splash-container img{
   display: grid;
   
   
-  
   height: 674.5px;
   width: 674.5px;
->>>>>>> 1cc40c91208600486e8f1e67d71a3b4688773c2c
+}
+
+
 .The-Team-grid {
     padding: 40px 15px;
     background-color: #eee;
     text-align: center;
->>>>>>> 31839ad5ba6814300c561aeccb72ba846caf591b
+
 }
-<<<<<<< HEAD
-.Team-text{
-    display: grid;
-}
-=======
 
 
 .team-header{
@@ -157,5 +190,3 @@
   font-size: 35px;
   color: #5F002B;
 }
-
->>>>>>> 1cc40c91208600486e8f1e67d71a3b4688773c2c
