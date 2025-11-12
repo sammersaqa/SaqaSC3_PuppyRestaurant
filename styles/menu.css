@@ -1,0 +1,44 @@
+/* Ensure footer stays below content */
+.menu-section {
+  margin-bottom: 40px; /* adds space between last card and footer */
+}
+
+/* Footer container: keep your original layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left text (address + phone) */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  font-size: 0.70rem;
+  opacity: 0.9;
+}
+
+/* Right side: logo on top of copyright */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-small {
+  width: 60px;
+  height: auto;
+  margin-bottom: 2px; /* small gap below logo */
+  transform: translateX(10px); /* slight right nudge */
+}
+
+.footer-right span {
+  font-size: 0.70rem;
+}
