@@ -65,21 +65,43 @@ body {
 .navbar-nav .nav-link:hover {
     color: #8A0040 !important;
 }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 
-/* --- Footer --- */
-.footer-logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 50px 20px 0; 
+  color: white;           
+}
+
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  font-size: 0.70rem;  
+  opacity: 0.9;        
+}
+
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .logo-small {
-    width: 60px;
-    height: auto;
+  width: 60px; 
+  height: auto;
+  margin-bottom: 2px; 
+  transform: translateX(40px); 
 }
 
+.footer-right span {
+  font-size: 0.70rem;
+}
 .copyright-adobe {
     font-size: 0.7rem;
     color: var(--fine-print-color);
