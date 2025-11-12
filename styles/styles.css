@@ -1,158 +1,318 @@
-/* === VARIABLES === */
+/* =========================================================
+   === VARIABLES === 
+========================================================= */
 :root {
-  --cream-bg: #f8f6f0;
-  --burgundy-adobe: #8b3c3c;
-  --wood-texture-color: #d1b899;
-  --fine-print-color: #6d6d6d;
+    --cream-bg: #f8f6f0;
+    --burgundy-adobe: #8b3c3c;
+    --primary-accent: #980051;
+    --fine-print-color: #6d6d6d;
 }
+
+/* =========================================================
+   === GLOBAL STYLES === 
+========================================================= */
 
 body {
-  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
-/* === GLOBAL === */
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.dosis-Fugaz {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .wood-wrapper {
-  background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh; /* ensures full vertical coverage */
+    background-image: url('/RestaurantMockupFiles/assets/wood-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 
-
-/* === HEADER === */
-.hero-header {
-  background: url('/RestaurantMockupFiles/assets/homeHero.jpg') center/cover no-repeat;
-  height: 400px;
-  position: relative;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
+/* --- Navbar --- */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
-.logo-adobe {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 3rem;
-  color: var(--burgundy-adobe);
-}
-
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.navbar-brand img {
+    height: 50px;
+    width: auto;
 }
 
 .navbar-nav a,
 .navbar-nav .nav-link {
-  color: #5F002B !important;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: color 0.3s;
+    color: #5F002B !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #8A0040 !important;
+    color: #8A0040 !important;
 }
 
-.navbar-brand img {
-  height: 50px;
-  width: auto;
+/* --- Footer --- */
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 50px 20px 0; 
 }
 
-/* === MAIN CONTENT === */
-.homehero {
-  background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
-  background-size: cover;
-  height: 800px;
-  padding: 400px 0;
-}
-
-.imgSingles {
-  margin-top: 50px;
-  margin-left: 100px;
-}
-
-.content-grid-adobe {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.content-box {
-  padding: 20px;
-}
-
-.description-text-adobe {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-.fine-print-text {
-  font-size: 0.75rem;
-  color: var(--fine-print-color);
-}
-
-/* === FOOTER === */
-.page-nav-controls-adobe {
-  text-align: center;
-  padding: 30px 0 10px;
-}
-
-.page-count-adobe {
-  font-size: 0.8rem;
-  color: var(--fine-print-color);
+.logo-small {
+    width: 60px;
+    height: auto;
 }
 
 .copyright-adobe {
-  text-align: right;
-  font-size: 0.7rem;
-  color: var(--fine-print-color);
-  padding-bottom: 20px;
-  padding-right: 50px;
+    font-size: 0.7rem;
+    color: var(--fine-print-color);
 }
 
-.copyleft-adobe {
-  text-align: left;
-  font-size: 0.7rem;
-  color: var(--fine-print-color);
-  padding-bottom: 20px;
-  padding-right: 50px;
+.text-color{
+    color: #5F002B;
 }
 
+/* =========================================================
+   === HOME PAGE STYLES === 
+========================================================= */
 
-/* === CUSTOM FONT === */
-.dosis-Fugaz {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-/* === MENU PAGE === */
-
-/* Background texture */
-.menu-background {
-    /* Use a high-resolution, light tan/parchment image for the background */
-    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+.homehero {
+    background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
-    padding: 50px 0; /* Add vertical spacing */
+    height: 800px;
+    padding: 400px 0;
 }
 
-/* Image containers */
-.menu-image-container {
-    height: 150px; /* Example height */
-    overflow: hidden;
-    /* Images should span the full width of their column */
+.homepage-splash-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.homepage-splash-container img{
+    margin: auto;
+}
+
+.splash-text-box {
+    color: #5F002B;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: 'Montauk', sans-serif;
+}
+
+
+/* =========================================================
+   === MENU PAGE STYLES === 
+========================================================= */
+
+.menu h1 {
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #980051;
+}
+
+.menu {
+  background-color: white;
+}
+
+.menu-panel {
+    background-color: #ffffff;
+    border-radius: 4px; 
+    overflow: hidden; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
+    
+    margin-bottom: 25px; 
+    
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.menu-panel img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.menu-content.p-4 {
+    padding: 25px !important;
+    flex-grow: 1; 
+}
+
+.menu-title {
+    font-family: 'Fugaz One', sans-serif;
+    color: #980051;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-subtitle {
+    font-family: 'Montauk', serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item {
+    border-bottom: none; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+
+.menu-item-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px; 
+}
+
+.item-dash-spacer {
+    flex-grow: 1; 
+    border-bottom: 1px dashed var(--primary-accent);
+    height: 1em; 
+    margin: 0 10px;
+}
+
+.menu-text h5 {
+    margin-bottom: 0; 
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-text p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.menu-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-accent); 
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   === CATERING PAGE STYLES === 
+========================================================= */
+
+.catering-page-container {
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+.cater {
+  background-color: white;
+}
+
+.catering-image-full {
+    width: 100%;
+    height: 380px; 
+    object-fit: cover;
+    display: block;
+}
+
+.catering-inner-block {
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 100%; 
+}
+
+.catering-image-fill {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+.catering-text-box h2 {
+    font-family: 'Montauk', serif; 
+    color: #333;
+}
+
+.catering-gallery-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================================
+   === PHOTOS PAGE STYLES === 
+========================================================= */
+
+.photo-title {
+    font-family: 'Fugaz One', sans-serif; 
+    font-size: 40px; 
+    color: #9F5B68; 
+    letter-spacing: 2px;
+}
+
+.photo {
+  background-color: white;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    
+    max-width: 1000px; 
+    margin: 0 auto;
+    
+    background-color: white; 
+    padding: 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+    .grid-image {
+        height: 150px;
+    }
 }

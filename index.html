@@ -20,39 +20,39 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid p-0">
-      <!-- Logo links to homepage -->
-      <a class="navbar-brand ms-2" href="index.html">
-        <img src="./RestaurantMockupFiles/assets/MuzzlesLogo.png" alt="Muzzles Logo">
-      </a>
+ <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand ms-2" href="/Pages/Menu.html">
+                <img src="/RestaurantMockupFiles/assets/MuzzlesLogo.png" alt="Muzzles Logo">
+            </a>
 
-      <!-- Mobile toggle button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- Navigation links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <a class="nav-link active dosis-Fugaz fw-bold" aria-current="page" href="/Pages/About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/Menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/catering.html">Catering</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/photos.html">Photo</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active dosis-Fugaz fw-bold" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active dosis-Fugaz fw-bold" aria-current="page"
+                            href="/Pages/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dosis-Fugaz fw-bold" href="/Pages/photos.html">Photo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
   <!-- Hero Section -->
   <main class="homehero">
@@ -69,21 +69,29 @@
   </main>
 
   <!-- Single Image Section -->
-  <section>
-    <img src="./RestaurantMockupFiles/assets/homeSingle.jpg" alt="Featured Dish" class="imgSingles">
-  </section>
-  <div class="footer-container">
-  <!-- Left Side (Text Info) -->
-  <div class="footer-text">
-    <div class="copyleft-adobe dosis-Fugaz text-color">
-      1357 Mutt Street, Rottweiler CA. 12345
-    </div>
-    <div class="copyleft-adobe dosis-Fugaz text-color">
-      Phone: 123-456-7890
+<section>
+  <div class="row mx-auto">
+    <div class="col mx-auto">
+      <div class="homepage-splash-container mx-auto">
+        <img src="/RestaurantMockupFiles/assets/homeSingle.jpg" alt="" class="imgSingles">
+        <div class="splash-text-box">
+          <h1>Muzzle's Sandwiches and Grill</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="/RestaurantMockupFiles/assets/HomeImage.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Right Side (Logo + Copyright) -->
+<!-- Footer OUTSIDE section -->
+<footer class="footer-container">
+  <!-- Left Side (Logo + Copyright) -->
   <div class="footer-logo">
     <img src="./RestaurantMockupFiles/assets/CompanyLogo.png" 
          alt="Company logo" 
@@ -92,8 +100,17 @@
       Copyright © Muzzles Restaurant
     </div>
   </div>
-</div>
 
+  <!-- Right Side (Address + Phone) -->
+  <div class="footer-text">
+    <div class="copyleft-adobe dosis-Fugaz text-color">
+      1357 Mutt Street, Rottweiler CA. 12345
+    </div>
+    <div class="copyleft-adobe dosis-Fugaz text-color">
+      Phone: 123-456-7890
+    </div>
+  </div>
+</footer>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
