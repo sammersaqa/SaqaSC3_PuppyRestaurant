@@ -33,6 +33,12 @@
 }
 
 
+.about-splash-container h6{
+  font-family: 'Fugaz One';
+  font-size: 35px;
+  text-align: left;
+}
+/* Style for the paragraph text */
 .about-story-text p {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
