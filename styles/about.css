@@ -167,12 +167,34 @@
 
 
 .The-Team-grid {
-    padding: 40px 15px;
-    background-color: #eee;
+    border-radius: 0;
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
     text-align: center;
-
+  }
+  
+.card-header{
+  color: #5F002B;
+  border-radius: 0;
+  font-family: 'Fugaz One';
+  text-align: left;
+  padding: 0;
+  background-color: white;
+  font-size: 30px;
 }
 
+.card{
+  color: #5F002B;
+  border-radius: 0;
+  font-family: 'Montauk';
+  text-align: left;
+  font-size: 15px;
+}
+
+
+
+.card img{
+  border-radius: 0;
+}
 
 .team-header{
   background-color: white;
