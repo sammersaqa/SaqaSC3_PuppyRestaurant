@@ -8,6 +8,19 @@
 }
 
 .mainDog {
-  
+
   margin-left: 120px;
+}
+
+.StoryGrillBox{
+    width: 100%;
+    height: 500px;
+    justify-content:flex-end;
+    background-color:black;
+
+}
+.aboutrow{
+   display: flex;
+   justify-content:flex-end; 
+    align-items:flex-end;
 }
