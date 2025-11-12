@@ -15,14 +15,7 @@
     justify-content: center;
 }
 
-.mainDog {
 
-  margin-left: 120px;
-/* Style for the Story Text container */
-.about-story-text {
-    padding-left: 30px; 
-    padding-right: 15px; 
-}
 
 .about-story-text h6 {
     font-family: 'Fugaz One', sans-serif;
@@ -65,35 +58,36 @@
     line-height: 1.6;
     font-size: 1rem;
     color: #333;
-}
-
-/* Mobile Responsiveness (Screen width up to 767px) */
-@media (max-width: 767px) {
+  }
+  
+  /* Mobile Responsiveness (Screen width up to 767px) */
+  @media (max-width: 767px) {
     
     .about-splash-section {
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
     }
     
     .about-story-text {
-        /* Reset padding for full-width view */
-        padding-left: 15px; 
-        padding-right: 15px;
-        margin-top: 20px; /* Adds space between the stacked image and text */
+      /* Reset padding for full-width view */
+      padding-left: 15px; 
+      padding-right: 15px;
+      margin-top: 20px; /* Adds space between the stacked image and text */
     }
-
+    
     .about-story-text h6 {
-        font-size: 1.5rem; /* Smaller title on mobile */
-        text-align: center; /* Center the title on mobile */
+      font-size: 1.5rem; /* Smaller title on mobile */
+      text-align: center; /* Center the title on mobile */
     }
-
+    
     .about-story-text p {
-        font-size: 0.95rem; 
+      font-size: 0.95rem; 
     }
+  }
 }
-
-/* Tablet Responsiveness (Screen width between 768px and 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
+  
+  /* Tablet Responsiveness (Screen width between 768px and 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
     
     .about-story-text {
         padding-left: 20px; 
@@ -116,7 +110,7 @@
 .about-text p{
   font-size: 18px;
   max-height: 674.5px;
-  
+  background-color: white;
   font-family: 'Montauk';
   
   
@@ -148,9 +142,11 @@
   display: grid;
   
   
-  
   height: 674.5px;
   width: 674.5px;
+}
+
+
 .The-Team-grid {
     padding: 40px 15px;
     background-color: #eee;
@@ -175,4 +171,3 @@
   font-size: 35px;
   color: #5F002B;
 }
-
