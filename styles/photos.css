@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-section {
+  margin-bottom: 10px;  
+  padding-bottom: 0;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 10px 40px;     
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  text-align: left;
+}
+
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-small {
+  width: 60px;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.footer-right span {
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+.photo-title {
+    font-family: 'Fugaz One, Regular'; 
+    font-size: 50px; 
+    font-weight: bolder;
+    color: #5F002B; 
+
+}
+
+.photo {
+  background-color: white;
+  width: 1240px;
+  margin-left: 30px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    height: 1000px;
+    max-width: 1500px; 
+    margin: 0 auto;
+    padding: 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-image {
+    width: 100%;   
+    object-fit: cover; 
+    display: block;
+    border-color: white;
+}
+
+.photo-title-wrapper {
+    margin: 0 auto 15px; 
+    max-width: 1240px; 
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.photo-item {
+    border: white 8px solid;
+}
+
+@media (max-width: 992px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+    .grid-image {
+        height: 150px;
+    }
+}
