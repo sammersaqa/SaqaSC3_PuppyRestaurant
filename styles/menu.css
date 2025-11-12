@@ -30,6 +30,7 @@
   flex-direction: column;
   gap: 3px;
   font-size: 0.9rem;
+   color: #5F002B;
 }
 
 /* Right Side: Logo + Text */
@@ -40,6 +41,7 @@
   text-align: right;
   gap: 2px;
   transform: translateY(-4px);
+   color: #5F002B;
 }
 
 .logo-small {
