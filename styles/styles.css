@@ -292,9 +292,10 @@ body {
 ========================================================= */
 
 .photo-title {
-    font-family: 'Fugaz One', sans-serif; 
-    font-size: 40px; 
-    color: #9F5B68; 
+    font-family: 'Fugaz One, Regular'; 
+    font-size: 50px; 
+    font-weight: bolder;
+    color: #5F002B; 
     letter-spacing: 2px;
 }
 
