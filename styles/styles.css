@@ -144,158 +144,16 @@ body {
     font-family: 'Montauk', sans-serif;
 }
 
-
-/* =========================================================
-   === MENU PAGE STYLES === 
-========================================================= */
-
-.menu h1 {
-    background-color: white;
-    padding: 10px 20px;
-    display: inline-block;
-    color: #980051;
-}
-
-.menu {
-  background-color: white;
-}
-
-.menu-panel {
-    background-color: #ffffff;
-    border-radius: 4px; 
-    overflow: hidden; 
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
-    
-    margin-bottom: 25px; 
-    
-    height: 100%; 
-    display: flex; 
-    flex-direction: column;
-}
-
-.menu-panel img {
-    width: 100%;
-    height: 250px; 
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.menu-content.p-4 {
-    padding: 25px !important;
-    flex-grow: 1; 
-}
-
-.menu-title {
-    font-family: 'Fugaz One', sans-serif;
-    color: #980051;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.menu-subtitle {
-    font-family: 'Montauk', serif;
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-}
-
-.menu-item {
-    border-bottom: none; 
-    padding-bottom: 5px; 
-    margin-bottom: 15px; 
-}
-
-.menu-item-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 5px; 
-}
-
-.item-dash-spacer {
-    flex-grow: 1; 
-    border-bottom: 1px dashed var(--primary-accent);
-    height: 1em; 
-    margin: 0 10px;
-}
-
-.menu-text h5 {
-    margin-bottom: 0; 
-    flex-shrink: 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.menu-text p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 0;
-}
-
-.menu-price {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--primary-accent); 
-    flex-shrink: 0;
-}
-
-/* =========================================================
-   === CATERING PAGE STYLES === 
-========================================================= */
-
-.catering-page-container {
-    max-width: 1100px; 
-    margin: 0 auto;
-}
-
-.cater {
-  background-color: white;
-}
-
-.catering-image-full {
-    width: 100%;
-    height: 380px; 
-    object-fit: cover;
-    display: block;
-}
-
-.catering-inner-block {
-    background-color: white; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    height: 100%; 
-}
-
-.catering-image-fill {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-    display: block;
-}
-
-.catering-text-box h2 {
-    font-family: 'Montauk', serif; 
-    color: #333;
-}
-
-.catering-gallery-image {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
-    display: block;
-}
-
 /* =========================================================
    === PHOTOS PAGE STYLES === 
 ========================================================= */
 
 .photo-title {
-    font-family: 'Fugaz One', sans-serif; 
-    font-size: 40px; 
-    color: #9F5B68; 
-    letter-spacing: 2px;
+    font-family: 'Fugaz One, Regular'; 
+    font-size: 50px; 
+    font-weight: bolder;
+    color: #5F002B; 
+
 }
 
 .photo {

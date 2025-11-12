@@ -1,4 +1,10 @@
-/*main css for "About" page */
+.about-main-img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
 
 .about-grid{
     height: 100th;
@@ -12,6 +18,108 @@
 .mainDog {
 
   margin-left: 120px;
+/* Style for the Story Text container */
+.about-story-text {
+    padding-left: 30px; 
+    padding-right: 15px; 
+}
+
+.about-story-text h6 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 1.8rem;
+    color: #980051;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.aboutPage-chat-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+.about-splash-container{
+  display: grid;
+  grid-template-columns:repeat(2, .5fr);
+  text-align: left;
+  color: #5F002B;
+  
+  max-width: 1624.5px;
+  
+  
+  
+  max-height: 674.5px;
+}
+
+.about-splash-container h6{
+  font-family: 'Fugaz One';
+  font-size: 35px;
+  text-align: left;
+
+/* Style for the paragraph text */
+.about-story-text p {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Mobile Responsiveness (Screen width up to 767px) */
+@media (max-width: 767px) {
+    
+    .about-splash-section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    
+    .about-story-text {
+        /* Reset padding for full-width view */
+        padding-left: 15px; 
+        padding-right: 15px;
+        margin-top: 20px; /* Adds space between the stacked image and text */
+    }
+
+    .about-story-text h6 {
+        font-size: 1.5rem; /* Smaller title on mobile */
+        text-align: center; /* Center the title on mobile */
+    }
+
+    .about-story-text p {
+        font-size: 0.95rem; 
+    }
+}
+
+/* Tablet Responsiveness (Screen width between 768px and 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .about-story-text {
+        padding-left: 20px; 
+    }
+
+    .about-story-text h6 {
+        font-size: 1.6rem;
+    }
+}
+.about-text{
+  background-color: white;
+
+  
+  
+  
+  
+  
+}
+
+.about-text p{
+  font-size: 18px;
+  max-height: 674.5px;
+  
+  font-family: 'Montauk';
+  
+  
 }
 
 .StoryGrillBox{
@@ -36,3 +144,35 @@
     margin: 3rem auto;
     max-width: 1200px;
 }
+.about-splash-container img{
+  display: grid;
+  
+  
+  
+  height: 674.5px;
+  width: 674.5px;
+.The-Team-grid {
+    padding: 40px 15px;
+    background-color: #eee;
+    text-align: center;
+
+}
+
+
+.team-header{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fugaz One';
+  font-size: 50px;
+  
+}
+.team-header h6{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fugaz One';
+  font-size: 35px;
+  color: #5F002B;
+}
+
