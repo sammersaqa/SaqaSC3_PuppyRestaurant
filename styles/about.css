@@ -30,6 +30,7 @@
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
+    width: 800px;
 }
 
 
@@ -59,7 +60,7 @@
 /* --- Team Zone Styles --- */
 .The-Team-grid {
     padding: 40px 15px;
-    background-color: #eee;
+   background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
     text-align: center;
 }
 
