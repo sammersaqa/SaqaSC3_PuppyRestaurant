@@ -1,4 +1,8 @@
 .about-splash-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:auto;
+  margin: auto;
+  max-width: 1640px;
+  max-height: 674px;
+
 }
