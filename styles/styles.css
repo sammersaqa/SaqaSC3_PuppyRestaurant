@@ -119,27 +119,27 @@ body {
     background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
     height: 800px;
-    padding: 400px 0;
+   
 }
 
 .homepage-splash-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    display: flex;
+    
+    align-items: center;
+
     justify-content: center;
-    margin: 3rem auto;
-    max-width: 1200px;
+   
+   
 }
 
 .homepage-splash-container img{
-    margin: auto;
+  
 }
 
 .splash-text-box {
     color: #5F002B;
     background-color: white;
-    padding: 2rem;
+  
     border-radius: 10px;
     font-family: 'Montauk', sans-serif;
 }
