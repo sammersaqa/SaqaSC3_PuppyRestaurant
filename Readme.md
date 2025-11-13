@@ -30,7 +30,7 @@ Design Elements
 - Fonts & Logos: Kellen and Xavier picked fonts and logos that matched the theme
 
 Tools Used
-- HTML5 – for building the structure
-- CSS3 – for styling the pages
-- Bootstrap 5.3 – for layout and navigation
+- HTML – for building the structure
+- CSS – for styling the pages
+- Bootstrap – for layout and navigation
 - Google Fonts – Dosis and Fugaz One for a playful look
