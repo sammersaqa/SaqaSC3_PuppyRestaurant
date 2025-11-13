@@ -163,19 +163,15 @@ body {
     height: 400px;
     width: 1000px;
     align-content: center;
-    padding-left: 15px;
     margin-left: 15px;
-}
-
-.imgSingle {
-    position: relative;
-
+  
 }
 
 .three {
-    width: 1000px;
+    width: 999px;
+    height: 228px;
     object-fit: cover;
-    padding-right: 100px;
+   
 }
 /* =========================================================
    === PHOTOS PAGE STYLES === 
