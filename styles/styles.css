@@ -44,8 +44,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5F002B;
     backdrop-filter: blur(5px);
+
 }
 
 .navbar-brand img {
@@ -55,11 +55,8 @@ body {
 
 .navbar-nav a,
 .navbar-nav .nav-link {
-    color: #5F002B !important;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    font-family: 'Fugaz One';
+    color: #980051;
 }
 
 .navbar-nav .nav-link:hover {
@@ -124,34 +121,34 @@ body {
     background-size: cover;
     height: 800px;
     margin-bottom: 50px;
-   
+
 }
 
 .homepage-splash-container {
     display: flex;
-    
+
     align-items: center;
 
     justify-content: center;
-   
-   
+
+
 }
 
 .main-splash-img {
-  width: 38%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 38%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
 .inner-image {
-  width: 80%;
-  max-width: 1000px; 
-  height: auto;
-  border-radius: 10px;
-  margin-top: 15px;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .splash-text-box {
@@ -164,15 +161,16 @@ body {
     width: 1000px;
     align-content: center;
     margin-left: 15px;
-  
+
 }
 
 .three {
     width: 999px;
     height: 228px;
     object-fit: cover;
-   
+
 }
+
 /* =========================================================
    === PHOTOS PAGE STYLES === 
 ========================================================= */
