@@ -96,6 +96,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   color: #5F002B;
+  opacity: 100%;
 }
 
 .menu-item p {
@@ -103,7 +104,7 @@ body {
   font-size: 0.9rem;
   color: #5F002B;
   /* Matches the color in your last CSS input */
-  font-family: 'Montauk', serif;
+  font-family: 'Montauk';
   margin-bottom: 0;
 }
 
