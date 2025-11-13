@@ -123,6 +123,7 @@ body {
     background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
     height: 800px;
+    margin-bottom: 50px;
    
 }
 
@@ -156,11 +157,25 @@ body {
 .splash-text-box {
     color: #5F002B;
     background-color: white;
-  
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: 'Montauk', sans-serif;
+    height: 400px;
+    width: 1000px;
+    align-content: center;
+    padding-left: 15px;
+    margin-left: 15px;
 }
 
+.imgSingle {
+    position: relative;
+
+}
+
+.three {
+    width: 1000px;
+    object-fit: cover;
+    padding-right: 100px;
+}
 /* =========================================================
    === PHOTOS PAGE STYLES === 
 ========================================================= */
