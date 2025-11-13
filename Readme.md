@@ -12,20 +12,17 @@
 
 This project is a mockup website for "Muzzle's Sandwiches & Grill," designed with a focus on responsive layout using Bootstrap and custom CSS for aesthetics.
 
-Key Features
+### Key Features
 
-Responsive Design: Utilizes Bootstrap's grid system to ensure optimal viewing across mobile, tablet, and desktop devices.
+## Responsive Design: Utilizes Bootstrap's grid system to ensure optimal viewing across mobile, tablet, and desktop devices.
 
-Structured Content: Dedicated pages for Home, About, Menu, Catering, and Photos.
+## Structured Content: Dedicated pages for Home, About, Menu, Catering, and Photos.
 
-Aesthetic Styling: Custom fonts (Dosis, Fugaz One) and unique styling to establish brand identity.
+## Aesthetic Styling: Custom fonts (Dosis, Fugaz One) and unique styling to establish brand identity.
 
-Team Contributions Summary
+## Team Contributions Summary
 
-This project was a collaborative effort. Below is a breakdown of the primary responsibilities for each team member:
-
-Team Member
-
+<!-- ### This project was a collaborative effort. Below is a breakdown of the primary responsibilities for each 
 Page/Area of Focus
 
 Specific Technical Contribution
@@ -91,3 +88,5 @@ CSS3
 Bootstrap 5.3: Used for the responsive grid system and navigation bar structure.
 
 Google Fonts: Dosis, Fugaz One
+
+ -->
