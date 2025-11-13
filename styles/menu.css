@@ -80,13 +80,6 @@ body {
   }
 }
 
-/* .menu h1 {
-    background-color: white;
-    padding: 10px 20px;
-    display: inline-block;
-    color: #980051;
-} */
-
 .menu {
   background-color: white;
   font-family: 'Fugaz One';
@@ -118,9 +111,9 @@ body {
 }
 
 .menu-title {
-    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Fugaz One';
     color: #980051;
-    font-size: 1.8rem;
+    font-size: 30px;
     margin-bottom: 0.5rem;
 }
 

@@ -52,10 +52,10 @@ body {
 }
 
 .photo-title {
-  font-family: 'Fugaz One, Regular';
+  font-family: 'Fugaz One';
   font-size: 50px;
-  font-weight: bolder;
-  color: #5F002B;
+  font-weight: 400;
+  color: #980051
 
 }
 
