@@ -1,6 +1,6 @@
 .about-main-img {
     width: 100%;
-    height: auto; 
+    height: 1060px; 
     object-fit: cover;
     display: block;
     border-radius: 4px;
@@ -41,10 +41,14 @@
 }
 /* Style for the paragraph text */
 .about-story-text p {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Montauk';
     line-height: 1.6;
-    font-size: 1rem;
-    color: #333;
+    font-size: 20px;
+    color: #5F002B;
+}
+
+.col6 {
+  background-color: white;
 }
 
 
