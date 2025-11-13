@@ -14,12 +14,12 @@
 
 body {
     background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-attachment: fixed;
 }
 
 .fugaz-one-regular {
-    font-family: "Fugaz One", sans-serif;
+    font-family: "Fugaz One";
     font-weight: 400;
     font-style: normal;
 }
@@ -44,8 +44,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
+
 }
 
 .navbar-brand img {
@@ -55,59 +55,60 @@ body {
 
 .navbar-nav a,
 .navbar-nav .nav-link {
-    color: #5F002B !important;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    font-family: 'Fugaz One';
+    color: #980051;
 }
 
 .navbar-nav .nav-link:hover {
     color: #8A0040 !important;
 }
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 
-  color: white;           
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    color: white;
 }
 
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  text-align: left;
-  font-size: 0.70rem;  
-  opacity: 0.9;        
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+    font-size: 0.70rem;
+    opacity: 0.9;
+    color: #5F002B;
 }
 
 
 .footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #5F002B;
 }
 
 .logo-small {
-  width: 60px; 
-  height: auto;
-  margin-bottom: 2px; 
-  transform: translateX(40px); 
+    width: 60px;
+    height: auto;
+    margin-bottom: 2px;
+    transform: translateX(40px);
 }
 
 .footer-right span {
-  font-size: 0.70rem;
+    font-size: 0.70rem;
 }
+
 .copyright-adobe {
     font-size: 0.7rem;
     color: var(--fine-print-color);
 }
 
-.text-color{
+.text-color {
     color: #5F002B;
 }
 
@@ -119,29 +120,55 @@ body {
     background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
     height: 800px;
-    padding: 400px 0;
+    margin-bottom: 50px;
+
 }
 
 .homepage-splash-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    display: flex;
+
+    align-items: center;
+
     justify-content: center;
-    margin: 3rem auto;
-    max-width: 1200px;
+
+
 }
 
-.homepage-splash-container img{
-    margin: auto;
+.main-splash-img {
+    width: 38%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.inner-image {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .splash-text-box {
     color: #5F002B;
+    font-family: 'Fugaz One, Regular';
     background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: 'Montauk', sans-serif;
+    height: 400px;
+    width: 1000px;
+    align-content: center;
+    margin-left: 15px;
+
+}
+
+.three {
+    width: 999px;
+    height: 228px;
+    object-fit: cover;
+
 }
 
 /* =========================================================
@@ -149,40 +176,40 @@ body {
 ========================================================= */
 
 .photo-title {
-    font-family: 'Fugaz One, Regular'; 
-    font-size: 50px; 
+    font-family: 'Fugaz One, Regular';
+    font-size: 50px;
     font-weight: bolder;
-    color: #5F002B; 
+    color: #5F002B;
 
 }
 
 .photo {
-  background-color: white;
-  width: 1240px;
-  margin-left: 30px;
+    background-color: white;
+    width: 1240px;
+    margin-left: 30px;
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 15px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     height: 1000px;
-    max-width: 1500px; 
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 30px; 
+    padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .grid-image {
-    width: 100%;   
-    object-fit: cover; 
+    width: 100%;
+    object-fit: cover;
     display: block;
     border-color: white;
 }
 
 .photo-title-wrapper {
-    margin: 0 auto 15px; 
-    max-width: 1240px; 
+    margin: 0 auto 15px;
+    max-width: 1240px;
     width: 100%;
     background-color: white;
     padding: 15px 0;
@@ -207,6 +234,7 @@ body {
         padding: 10px;
         gap: 10px;
     }
+
     .grid-image {
         height: 150px;
     }
