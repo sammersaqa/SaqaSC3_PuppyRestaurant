@@ -1,19 +1,13 @@
-**Your name 
+## Team Members: Sammer Saqa, Kellen Dixon, James Blackwell, Xavier Jacques
 
-Date Revised: 11/13/2025
+## Date Revised: 11/13/2025
 
-Puppy Restaurant : This project is a mockup website for "Muzzle's Sandwiches & Grill," designed with a focus on responsive layout using Bootstrap and custom CSS for aesthetics.
+## Puppy Restaurant 
 
-Brief Description of what you did. 
+## Brief Description of what you did : This project is a mockup website for "Muzzle's Sandwiches & Grill" designed with a focus on responsive layout using Bootstrap and custom CSS for aesthetics. 
 
-Person who Peer Reviewed your assignment :
+## Person who Peer Reviewed your assignment :
 
-**
-
-
-Puppy Restaurant
-
-Team Members: Sammer Saqa, Kellen Dixon, James Blackwell, Xavier Jacques
 
 Key Features
 - Mobile-Friendly Layout – Built with Bootstrap so it adjusts to different screen sizes
