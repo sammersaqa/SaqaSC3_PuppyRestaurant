@@ -90,13 +90,14 @@ body {
     align-items: center;
     text-align: center;
     color: #5F002B;
+    transform: translateX(200px);
 }
 
 .logo-small {
     width: 60px;
     height: auto;
     margin-bottom: 2px;
-    transform: translateX(40px);
+    transform: translateX(52px);
 }
 
 .footer-right span {
