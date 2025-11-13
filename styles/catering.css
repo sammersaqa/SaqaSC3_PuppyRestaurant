@@ -54,7 +54,7 @@ body {
 .menu-subtitle {
   font-family: 'Montauk', serif;
   /* Changed from 'Fugaz One' to 'Montauk' for subtler style */
-  font-size: 0.95rem;
+  font-size: 22px;
   color: #5F002B;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
@@ -64,10 +64,12 @@ body {
 /* 2. Menu Item Gap Increase */
 .menu-item {
   border-bottom: none;
+  font-family: 'Montauk';
+  font-size: 20px;
+  color: #5F002B;
   padding-bottom: 0;
-  /* Removing redundant padding-bottom from previous styles */
   margin-bottom: 25px;
-  /* INCREASED GAP: Increased from 15px to 25px for clear separation */
+
 }
 
 .menu-item-line {
@@ -91,8 +93,8 @@ body {
 .menu-text h5 {
   margin-bottom: 0;
   flex-shrink: 0;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   color: #5F002B;
 }
 
