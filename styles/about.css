@@ -217,26 +217,23 @@
   color: #5F002B;
 }
 
-<<<<<<< HEAD
+
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-
-  color: white;           
+  color: white;
 }
-
 
 .footer-left {
   display: flex;
   flex-direction: column;
   gap: 4px;
   text-align: left;
-  font-size: 0.70rem;  
-  opacity: 0.9;        
+  font-size: 0.70rem;
+  opacity: 0.9;
 }
-
 
 .footer-right {
   display: flex;
@@ -246,47 +243,16 @@
 }
 
 .logo-small {
-  width: 60px; 
+  width: 60px;
   height: auto;
-  margin-bottom: 2px; 
-  transform: translateX(40px); 
+  margin-bottom: 2px;
+  transform: translateX(40px);
 }
 
 .footer-right span {
   font-size: 0.70rem;
 }
 
-.text-color{
-    color: #5F002B;
-}
-=======
-.footer-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-family: 'Dosis';
-  color: #5F002B;
-  font-size: 20px;
-}
-.footer-right {
-  display: flex;
-
-  align-items: center;
-
-  font-size: 40px;
+.text-color {
   color: #5F002B;
 }
-.footer-right span{
-  display: flex;
-
-  align-items: center;
-  font-family: 'Dosis';
-  font-size: 20px;
-  color: #5F002B;
-}
-
-.footer-container{
-  gap:  550px;
-}
->>>>>>> f20824bd05b768e9951f546d343f3cabdb3de896
