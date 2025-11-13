@@ -119,6 +119,8 @@ body {
 
 .cater {
   background-color: white;
+  font-family: 'Fugaz One';
+  color: #980051;
 }
 
 .caterbg {
@@ -155,4 +157,20 @@ body {
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+.caterNav {
+    font-family: 'Fugaz One';
+  color: #980051;
+}
+
+.caterh2 {
+  font-family: 'Fugaz One';
+  color: #980051;
+}
+
+.caterp {
+  font-family: 'Montauk';
+  color: #980051;
+  font-weight:400;
 }
