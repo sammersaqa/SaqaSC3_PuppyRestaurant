@@ -67,9 +67,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-
+    max-width: 1400px;
     color: white;
+    margin-top: 7rem;
 }
 
 
@@ -81,23 +81,27 @@ body {
     font-size: 0.70rem;
     opacity: 0.9;
     color: #5F002B;
+    font-family: 'Dosis';
+    font-weight: 500;
 }
 
 
 .footer-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: end;
+    text-align: right;
     color: #5F002B;
-    transform: translateX(200px);
+    /* transform: translateX(200px); */
+    font-family: 'Dosis';
 }
 
 .logo-small {
+    display: flex;
     width: 60px;
     height: auto;
     margin-bottom: 2px;
-    transform: translateX(52px);
+    /* transform: translateX(52px); */
 }
 
 .footer-right span {
@@ -120,20 +124,21 @@ body {
 .homehero {
     background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 300px;
     margin-bottom: 50px;
+
 
 }
 
 .homepage-splash-container {
     display: flex;
-
     align-items: center;
-
+    max-width: 900px;
     justify-content: center;
-
-
+    gap: 1rem;
 }
+
+
 
 .main-splash-img {
     width: 38%;
@@ -154,26 +159,34 @@ body {
 
 .splash-text-box {
     color: #5F002B;
-    font-family: 'Fugaz One, Regular';
+    font-family: 'Fugaz One';
     background-color: white;
     border-radius: 0px;
-    font-family: 'Montauk', sans-serif;
-    height: 400px;
-    width: 1000px;
-    align-content: center;
-    margin-left: 15px;
-
+    
+    border-style: solid;
+    border-color: white;
+    border-width: 1rem;
+    
+   
+    
+    
 }
 
-.three {
-    width: 999px;
-    height: 228px;
-    object-fit: cover;
+.imgSingle{
+    height: 355px;
+}
 
+
+.three {
+   display: flex;
+max-width: 800px;
+justify-content: center;
 }
 
 .muztext {
-    width: auto;
+    display: flex;
+    font-family: 'Dosis';
+    font-weight: 500;
 }
 
 /* =========================================================
