@@ -34,3 +34,5 @@ Tools Used
 - CSS – for styling the pages
 - Bootstrap – for layout and navigation
 - Google Fonts – Dosis and Fugaz One for a playful look
+
+######################## BIGGEST OBSTACLE WAS TOO MANY CSS FILES ############################
