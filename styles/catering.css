@@ -497,3 +497,105 @@ body {
     width: 40px;
   }
 }
+
+/* =========================================================
+   === EXTRA LARGE DESKTOP (1920px and up) === 
+========================================================= */
+@media (min-width: 1920px) {
+  /* Navbar */
+  .navbar {
+    margin-right: 8rem;
+  }
+
+  .navbar-brand img {
+    width: 250px;
+    height: 98px;
+    margin-left: 10rem;
+  }
+
+  /* Catering Containers */
+  .caterbg {
+    padding: 30px 0;
+  }
+
+  .catering-page-container {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+
+  .catering-image-full {
+    max-width: 1500px;
+    height: 500px;
+    margin-left: 1rem;
+  }
+
+  .catering-gallery-image {
+    height: 250px;
+  }
+
+  .catering-text-box {
+    padding: 30px;
+  }
+
+  .caterh2 {
+    font-size: 2.5rem;
+  }
+
+  .caterp {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  /* Menu Items */
+  .menu-subtitle {
+    font-size: 26px;
+    margin-bottom: 2rem;
+  }
+
+  .menu-item {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .menu-text h5 {
+    font-size: 24px;
+  }
+
+  .menu-item p {
+    font-size: 1.1rem;
+  }
+
+  .menu-price {
+    font-size: 1.3rem;
+  }
+
+  .item-dash-spacer {
+    margin: 0 15px;
+  }
+
+  /* Footer */
+  .footer-container {
+    margin-top: 4rem;
+    padding: 30px 0;
+  }
+
+  .footer-left {
+    margin-left: 14rem;
+    transform: translateX(-180px);
+    font-size: 0.85rem;
+  }
+
+  .footer-right {
+    margin-right: 14rem;
+    transform: translateX(180px);
+  }
+
+  .logo-small {
+    width: 70px;
+    transform: translateX(70px);
+  }
+
+  .footer-right span {
+    font-size: 0.85rem;
+  }
+}

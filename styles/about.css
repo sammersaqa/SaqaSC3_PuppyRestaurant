@@ -395,6 +395,103 @@
 
 /*
  * ----------------------------------------------------------------
+ * MEDIA QUERIES - 1920px DESKTOP
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 1920px) {
+    /* Navbar */
+    .navbar {
+        margin-right: 8rem;
+    }
+
+    .navbar-brand img {
+        width: 250px;
+        height: 98px;
+        margin-left: 10rem;
+    }
+
+    /* About Section */
+    .about-splash-section {
+        padding: 60px 0;
+    }
+
+    .about-main-img {
+        height: 800px;
+        max-height: 800px;
+    }
+
+    .story-box {
+        height: 800px;
+        max-height: 800px;
+        padding: 60px 50px;
+        margin-left: 30px;
+    }
+
+    .about-Title {
+        font-size: 2.2rem;
+    }
+
+    .story-box p {
+        font-size: 1.15rem;
+    }
+
+    /* Team Section */
+    .The-Team-grid {
+        padding: 60px 30px;
+    }
+
+    .team-header {
+        max-width: 1600px;
+        padding: 1.5rem 0;
+    }
+
+    .team-header h6 {
+        font-size: 2.5rem;
+    }
+
+    .card-img-container {
+        height: 250px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        max-width: 1800px;
+        margin-top: 3rem;
+        padding: 25px 40px;
+    }
+
+    .footer-left {
+        margin-left: 10rem;
+        font-size: 0.70rem;
+    }
+
+    .footer-right {
+        margin-right: 3rem;
+    }
+
+    .logo-small {
+        width: 70px;
+    }
+
+    .footer-right span {
+        font-size: 0.70rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
  * MOBILE RESPONSIVE (below 768px)
  * ----------------------------------------------------------------
  */
