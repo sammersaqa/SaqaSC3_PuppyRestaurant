@@ -64,13 +64,24 @@ body {
     color: #F002B0 !important;
 }
 
+/* Hamburger menu spacing */
+.navbar-toggler {
+    margin-left: 1rem;
+}
+
+.navbar-collapse {
+    padding-left: 1rem;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
     color: white;
-    margin-top: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 20px 0;
 }
 
 .footer-left {
@@ -258,7 +269,8 @@ body {
 
     /* Footer */
     .footer-container {
-        margin-top: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .footer-left {
@@ -342,8 +354,6 @@ body {
     /* Navbar */
     .navbar {
         margin-right: 1rem;
-        flex-direction: column;
-        gap: 10px;
     }
 
     .navbar-brand img {
@@ -352,25 +362,44 @@ body {
         margin-left: 1rem;
     }
 
-    /* Footer */
+    .navbar-toggler {
+        margin-left: 1.5rem;
+    }
+
+    .navbar-collapse {
+        padding-left: 1.5rem;
+    }
+
+    /* Footer - Consistent across all pages */
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 3rem;
-        gap: 15px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        gap: 10px;
+        padding: 15px 10px;
     }
 
     .footer-left {
         margin-left: 0;
         align-items: center;
         text-align: center;
+        font-size: 0.65rem;
     }
 
     .footer-right {
         margin-right: 0;
         align-items: center;
         text-align: center;
+    }
+
+    .logo-small {
+        width: 50px;
+    }
+
+    .footer-right span {
+        font-size: 0.65rem;
     }
 
     /* Home Page */
@@ -464,7 +493,13 @@ body {
         height: 39px;
     }
 
-    /* Footer */
+    /* Footer - Consistent across all pages */
+    .footer-container {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding: 15px 5px;
+    }
+
     .footer-left,
     .footer-right span {
         font-size: 0.6rem;

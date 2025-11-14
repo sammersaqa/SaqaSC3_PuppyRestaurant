@@ -43,6 +43,15 @@ body {
     color: #F002B0 !important;
 }
 
+/* Hamburger menu spacing */
+.navbar-toggler {
+    margin-left: 1rem;
+}
+
+.navbar-collapse {
+    padding-left: 1rem;
+}
+
 /* =========================================================
    === MENU CONTAINER === 
 ========================================================= */
@@ -159,6 +168,9 @@ body {
   box-sizing: border-box;
   width: 100%;
   background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 20px 0;
 }
 
 .footer-left {
@@ -166,7 +178,7 @@ body {
   flex-direction: column;
   gap: 3px;
   margin-left: 7rem;
-  font-size: 0.9rem;
+  font-size: 0.70rem;
   color: #5F002B;
   transform: translateX(-70px);
 }
@@ -184,6 +196,10 @@ body {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
+}
+
+.footer-right span {
+  font-size: 0.70rem;
 }
 
 /* =========================================================
@@ -225,23 +241,24 @@ body {
   }
 
   .footer-container {
-    padding: 25px 30px;
+    padding: 20px 30px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 
   .footer-left {
     transform: translateX(0);
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     margin-left: 3rem;
   }
 
   .footer-right {
     transform: translateX(0);
-    font-size: 0.85rem;
+    font-size: 0.65rem;
   }
 
   .logo-small {
-    transform: translateX(0);
-    margin-right: 0;
+    width: 50px;
   }
 }
 
@@ -251,14 +268,20 @@ body {
 @media (max-width: 768px) {
   .navbar {
     margin-right: 1rem;
-    flex-direction: column;
-    gap: 10px;
   }
 
   .navbar-brand img {
     width: 120px;
     height: 47px;
     margin-left: 1rem;
+  }
+
+  .navbar-toggler {
+    margin-left: 1.5rem;
+  }
+
+  .navbar-collapse {
+    padding-left: 1.5rem;
   }
 
   .wood-wrapper {
@@ -294,12 +317,15 @@ body {
     font-size: 0.85rem;
   }
 
+  /* Footer - Consistent across all pages */
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
-    padding: 25px 20px;
+    gap: 10px;
+    padding: 15px 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .footer-left {
@@ -307,6 +333,7 @@ body {
     transform: translateX(0);
     margin-left: 0;
     text-align: center;
+    font-size: 0.65rem;
   }
 
   .footer-right {
@@ -317,6 +344,11 @@ body {
 
   .logo-small {
     transform: translateX(0);
+    width: 50px;
+  }
+
+  .footer-right span {
+    font-size: 0.65rem;
   }
 }
 
@@ -363,12 +395,19 @@ body {
     font-size: 0.8rem;
   }
 
+  /* Footer - Consistent across all pages */
+  .footer-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 15px 5px;
+  }
+
   .footer-left,
-  .footer-right {
-    font-size: 0.75rem;
+  .footer-right span {
+    font-size: 0.6rem;
   }
 
   .logo-small {
-    width: 50px;
+    width: 40px;
   }
 }
