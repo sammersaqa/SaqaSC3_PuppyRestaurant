@@ -49,18 +49,20 @@ body {
 }
 
 .navbar-brand img {
-    height: 50px;
-    width: auto;
+   
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
 }
 
 .navbar-nav a,
 .navbar-nav .nav-link {
     font-family: 'Fugaz One';
-    color: #980051;
+    color: #5F002B;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #8A0040 !important;
+    color: #F002B0 !important;
 }
 
 .footer-container {
@@ -257,3 +259,4 @@ justify-content: center;
         height: 150px;
     }
 }
+

@@ -6,11 +6,11 @@
 
 /* === About Section Image === */
 .about-main-img {
-    width: 100%;
-    height: 1000px; /* Optional: Sets a reasonable maximum height on large screens */
+    width: 675px;
+    max-height: 675px; /* Optional: Sets a reasonable maximum height on large screens */
     object-fit: cover;
     display: block;
-    border-radius: 4px;
+    
 }
 
 /* === About Section Text Container === */
@@ -32,11 +32,14 @@
 
 .about-Title {
     font-family: 'Fugaz One';
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: .5rem;
 }
 
 /* === About Section Paragraph Text === */
 .about-story-text p {
-    font-family: 'Montauk';
+    
     line-height: 1.6;
     font-size: 1rem; /* Smaller font for better readability on small screens */
     color: #5F002B;
@@ -49,9 +52,9 @@
     background-color: white; /* Ensures consistent background */
 }
 .about-text p {
-    font-size: 1rem; 
+    font-size: .5rem; 
     max-height: none;
-    font-family: 'Montauk', serif;
+    /* font-family: 'Montauk'; */
 }
 
 
@@ -69,10 +72,10 @@
 
 .team-header {
     background-color: white;
-    /* max-width: 1240px; (Keep only if you want to cap the width of the header text area) */
+     max-width: 1300px; 
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 0;
+    padding: 1rem ;
 }
 
 .team-header h6 {
@@ -84,12 +87,12 @@
 
 /* === Card Image Standardization (Ensures cards are the same height) === */
 .card-img-container {
-    height: 250px; /* Fixed height for the container to crop images uniformly */
-    overflow: hidden;
+    max-height: 536px; /* Fixed height for the container to crop images uniformly */
+    overflow:hidden;
 }
 
 .card-img-top-custom {
-    width: 100%;
+    max-width: 536px;
     height: 100%;
     object-fit: cover; /* Crops image to fit container */
     border-radius: 0;
@@ -123,17 +126,20 @@
     padding: 20px;
     color: white;
 
+    flex-direction: column;
+  display: flex;
 }
 
 .footer-left {
 
   display: flex;
   flex-direction: column;
-  gap: 4px;
+ align-items: left;
   text-align: left;
   font-size: 0.70rem;
   opacity: 0.9;
-  transform: translateX(50px);
+  margin-left: 7rem;
+  /* transform: translateX(50px); */
 }
 
 .footer-right {
@@ -141,14 +147,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transform: translateX(-50px);
+  /* transform: translateX(-50px); */
 }
 
 .logo-small {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
-  transform: translateX(50px);
+  /* transform: translateX(50px); */
 
     gap: 4px;
     font-size: 0.9rem; /* Slightly larger for readability */
@@ -232,10 +238,32 @@
 
   .story-box {
   background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  width: 100%;
-  margin-left: 20px; 
-  box-sizing: border-box;
+  padding: 33px;
+ 
+  
+  
+  max-width: 950px;
+  
+  height: 526px;
+  
+  /* box-sizing: border-box; */
+}
+
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
+    
+}
+
+.main-about-text{
+    font-size: 16px;
+    font-family: 'Montauk';
+    color: #85003a;
+    line-height: 1.1;
+    
+}
+
+.navbar{
+    margin-right: 6rem;
 }
