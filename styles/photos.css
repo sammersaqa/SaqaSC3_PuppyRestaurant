@@ -3,66 +3,47 @@ body {
   padding: 0;
 }
 
-
-.menu-section {
-  margin-bottom: 10px;
-  padding-bottom: 0;
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
 }
 
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 40px;
-  width: 100%;
-  box-sizing: border-box;
-  color: #5F002B;
+/* =========================================================
+   === NAVBAR === 
+========================================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    margin-right: 6rem;
 }
 
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 0.7rem;
-  opacity: 0.9;
-  text-align: left;
-  margin-left: 6rem;
-  color: #5F002B;
-  /* transform: translateX(25px); */
+.navbar-brand img {
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
 }
 
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  text-align: center;
-   color: #5F002B;
-   margin-right:1rem;
-   margin-left: 5rem;
-   /* transform: translateX(-30px); */
+.navbar-nav a,
+.navbar-nav .nav-link {
+    font-family: 'Fugaz One';
+    color: #5F002B;
 }
 
-.logo-small {
-  width: 60px;
-  height: auto;
-  margin-bottom: 2px;
-  /* transform: translateX(40px); */
+.navbar-nav .nav-link:hover {
+    color: #5F002B;
 }
 
-.footer-right span {
-  font-size: 0.7rem;
-  margin-top: 0;
-}
-
+/* =========================================================
+   === PHOTOS PAGE === 
+========================================================= */
 .photo-title {
   font-family: 'Fugaz One';
   font-size: 50px;
   font-weight: 400;
-    color: #5F002B;
-
+  color: #5F002B;
 }
 
 .photo {
@@ -94,7 +75,6 @@ body {
   max-width: 1240px;
   width: 100%;
   background-color: white;
-  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -104,58 +84,224 @@ body {
   border: white 8px solid;
 }
 
-@media (max-width: 992px) {
+/* =========================================================
+   === FOOTER === 
+========================================================= */
+.menu-section {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #5F002B;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  text-align: left;
+  margin-left: 6rem;
+  color: #5F002B;
+  transform: translateX(-60px); 
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: center;
+  color: #5F002B;
+  margin-right: 1rem;
+  margin-left: 5rem;
+}
+
+.logo-small {
+  width: 60px;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.footer-right span {
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+/* =========================================================
+   === TABLET RESPONSIVE (768px - 991px) === 
+========================================================= */
+@media (max-width: 991px) {
+  .navbar {
+    margin-right: 3rem;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: 59px;
+    margin-left: 3rem;
+  }
+
+  .photo-title {
+    font-size: 40px;
+  }
+
+  .photo {
+    width: 95%;
+    margin-left: 15px;
+  }
+
   .photo-grid {
     grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    padding: 20px;
+  }
+
+  .photo-title-wrapper {
+    max-width: 95%;
+    padding: 10px 0;
+  }
+
+  .photo-item {
+    border: white 6px solid;
+  }
+
+  .footer-container {
+    padding: 10px 30px;
+  }
+
+  .footer-left {
+    transform: translateX(-30px);
+    margin-left: 3rem;
+    font-size: 0.65rem;
+  }
+
+  .footer-right {
+    margin-right: 0.5rem;
+    margin-left: 3rem;
+  }
+
+  .footer-right span {
+    font-size: 0.65rem;
+  }
+
+  .logo-small {
+    width: 50px;
   }
 }
 
+/* =========================================================
+   === MOBILE RESPONSIVE (below 768px) === 
+========================================================= */
 @media (max-width: 768px) {
+  .navbar {
+    margin-right: 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+    height: 47px;
+    margin-left: 1rem;
+  }
+
+  .photo-title {
+    font-size: 30px;
+  }
+
+  .photo {
+    width: 95%;
+    margin-left: 10px;
+  }
+
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
+    padding: 15px;
     gap: 10px;
+    height: auto;
   }
 
   .grid-image {
     height: 150px;
   }
-}
 
+  .photo-title-wrapper {
+    max-width: 95%;
+    padding: 8px 0;
+  }
 
+  .photo-item {
+    border: white 5px solid;
+  }
 
-.navbar {
-    display: flex;
-    justify-content:space-between;
+  .footer-container {
+    flex-direction: column;
     align-items: center;
-    margin-right: 7rem;
+    text-align: center;
+    gap: 15px;
+    padding: 10px 20px;
+  }
 
+  .footer-left {
+    transform: translateX(0);
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    transform: translateX(0);
+    margin-right: 0;
+    margin-left: 0;
+    align-items: center;
+  }
 }
 
-.navbar-brand img {
-   
-    width: 210px;
-    height: 82px;
-    margin-left: 7rem;
-}
+/* =========================================================
+   === SMALL MOBILE RESPONSIVE (below 480px) === 
+========================================================= */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 100px;
+    height: 39px;
+  }
 
-.navbar-nav a,
-.navbar-nav .nav-link {
-    font-family: 'Fugaz One';
-    color: #5F002B;
-   
-}
+  .photo-title {
+    font-size: 24px;
+  }
 
-.navbar-nav .nav-link:hover {
-    color: #5F002B;
-}
+  .photo {
+    width: 95%;
+    margin-left: 5px;
+  }
 
-.navbar{
-    margin-right: 6rem;
-}
+  .photo-grid {
+    padding: 10px;
+    gap: 8px;
+  }
 
-@font-face {
-    font-family: 'Montauk';
-    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
-    font-weight: lighter;
+  .grid-image {
+    height: 120px;
+  }
+
+  .photo-item {
+    border: white 3px solid;
+  }
+
+  .footer-left,
+  .footer-right span {
+    font-size: 0.6rem;
+  }
+
+  .logo-small {
+    width: 40px;
+  }
 }

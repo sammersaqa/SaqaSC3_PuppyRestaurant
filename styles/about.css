@@ -7,8 +7,6 @@
 /* === About Splash Section === */
 .about-splash-section {
     background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    /* padding: 10px ; */
-    
 }
 
 /* === About Section Image === */
@@ -23,7 +21,6 @@
     height: 300px;
     object-fit: cover;
     display: block;
- 
     max-height: 605px;
 }
 
@@ -31,11 +28,9 @@
 .story-box {
     background: white;
     padding: 20px;
-    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
     width: 95%;
     max-height: 605px;
     box-sizing: border-box;
-    /* margin: 0; */
 }
 
 /* === About Section Title (h6) === */
@@ -54,7 +49,6 @@
     line-height: .8;
     font-size: 12px;
     color: #5F002B;
-    /* margin-bottom: 1rem; */
 }
 
 .text-color {
@@ -89,12 +83,10 @@
 /* === Card Styling === */
 .card {
     color: #5F002B;
-    
     font-family: 'Montauk';
     font-weight: 450;
     text-align: left;
     font-size: 0.95rem;
-  
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -108,7 +100,6 @@
 .card-img-container {
     height: 300px;
     overflow: hidden;
-
 }
 
 .card-img-top-custom {
@@ -154,7 +145,6 @@
     margin-bottom: 3rem;
 }
 
-
 .footer-left {
     display: flex;
     flex-direction: column;
@@ -168,25 +158,20 @@
     margin-left: 7rem;
 }
 
-
 .footer-right {
     display: flex;
     flex-direction: column;
     align-items: end;
     text-align: right;
     color: #5F002B;
-    /* transform: translateX(200px); */
     font-family: 'Montauk';
     margin-right: 1rem;
-
 }
 
 .logo-small {
     display: flex;
     width: 100px;
-    
     margin-bottom: 5px;
-    /* transform: translateX(52px); */
 }
 
 .footer-right span {
@@ -373,25 +358,181 @@
     }
 }
 
+/*
+ * ----------------------------------------------------------------
+ * MOBILE RESPONSIVE (below 768px)
+ * ----------------------------------------------------------------
+ */
+@media (max-width: 767px) {
+    /* About Section */
+    .about-splash-section {
+        padding: 20px 0;
+    }
+
+    .about-image-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .about-main-img {
+        height: 250px;
+    }
+
+    .story-box {
+        width: 90%;
+        padding: 15px;
+        max-height: none;
+        margin: 0 auto;
+    }
+
+    .about-Title {
+        font-size: 1.3rem;
+    }
+
+    .story-box p {
+        font-size: 11px;
+    }
+
+    /* Team Section */
+    .The-Team-grid {
+        padding: 30px 10px;
+    }
+
+    .team-header {
+        padding: 0.75rem 0;
+    }
+
+    .team-header h6 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-container {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 15px;
+    }
+
+    .footer-left {
+        margin-left: 0;
+        font-size: 0.7rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-small {
+        width: 70px;
+    }
+
+    .footer-right span {
+        font-size: 0.8rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * SMALL MOBILE RESPONSIVE (below 480px)
+ * ----------------------------------------------------------------
+ */
+@media (max-width: 480px) {
+    /* About Section */
+    .about-main-img {
+        height: 200px;
+    }
+
+    .story-box {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .about-Title {
+        font-size: 1.1rem;
+    }
+
+    .story-box p {
+        font-size: 10px;
+    }
+
+    /* Team Section */
+    .The-Team-grid {
+        padding: 20px 5px;
+    }
+
+    .team-header h6 {
+        font-size: 1.3rem;
+    }
+
+    .card-img-container {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 0.75rem;
+    }
+
+    .card-header {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer-left {
+        font-size: 0.65rem;
+    }
+
+    .logo-small {
+        width: 60px;
+    }
+
+    .footer-right span {
+        font-size: 0.75rem;
+    }
+}
+
 /* 
  * ----------------------------------------------------------------
  * UTILITY CLASSES
  * ----------------------------------------------------------------
  */
 
-/* Smooth scrolling for story box */
+/* Smooth scrolling for story box (commented out as in original) */
 /* .story-box::-webkit-scrollbar {
     width: 5px;
 }
 
 .story-box::-webkit-scrollbar-track {
     background: #f1f1f1;
-    
 }
 
 .story-box::-webkit-scrollbar-thumb {
     background: #980051;
- 
 }
 
 .story-box::-webkit-scrollbar-thumb:hover {

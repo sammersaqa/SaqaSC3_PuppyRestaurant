@@ -8,60 +8,106 @@ body {
     src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
     font-weight: lighter;
 }
+
+/* =========================================================
+   === NAVBAR === 
+========================================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    margin-right: 6rem;
+}
+
+.navbar-brand img {
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
+}
+
+.navbar-nav a,
+.navbar-nav .nav-link {
+    font-family: 'Fugaz One';
+    color: #5F002B;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F002B0 !important;
+}
+
+/* =========================================================
+   === CATERING CONTAINERS === 
+========================================================= */
+.caterbg {
+  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+}
+
+.catering-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cater {
+  background-color: white;
+  font-family: 'Fugaz One';
+  color: #5F002B;
+}
+
+.catering-image-full {
+  max-width: 1177px;
+  height: 380px;
+  object-fit: cover;
+  display: flex;
+  margin-left: .7rem;
+}
+
+.catering-inner-block {
+  background-color: white;
+  height: 100%;
+}
+
+.catering-image-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.catering-text-box h2 {
+  font-family: 'Montauk', serif;
+  color: #333;
+}
+
+.catering-gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.caterh2 {
+  font-family: 'Fugaz One';
+  color: #5F002B;
+}
+
+.caterp {
+  font-family: 'Montauk';
+  color: #5F002B;
+  font-weight: 400;
+  line-height: .8;
+}
+
+/* =========================================================
+   === MENU ITEMS === 
+========================================================= */
 .menu-section {
   margin-bottom: 10px;
   padding-bottom: 0;
 }
 
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  /* padding: 10px 40px; */
-  /* width: max-content; */
-  /* box-sizing: border-box; */
-  color: white;
-}
-
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 0.7rem;
-  opacity: 0.9;
-  text-align: left;
-  color: #5F002B;
-  margin-left: 11rem;
-}
-
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #5F002B;
-  margin-right: 11rem;
- 
-}
-
-.logo-small {
-  width: 60px;
-  height: auto;
-  margin-bottom: 2px;
-  transform: translateX(50px);
-}
-
-.footer-right span {
-  font-size: 0.7rem;
-  margin-top: 0;
-}
-
 .menu-subtitle {
   font-family: 'Montauk', serif;
-  /* Changed from 'Fugaz One' to 'Montauk' for subtler style */
   font-size: 22px;
   color: #5F002B;
   margin-bottom: 1.5rem;
@@ -69,7 +115,6 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-/* 2. Menu Item Gap Increase */
 .menu-item {
   border-bottom: none;
   font-family: 'Montauk';
@@ -77,7 +122,6 @@ body {
   color: #5F002B;
   padding-bottom: 0;
   margin-bottom: 25px;
-
 }
 
 .menu-item-line {
@@ -111,7 +155,6 @@ body {
   margin-top: 2px;
   font-size: 0.9rem;
   color: #5F002B;
-  /* Matches the color in your last CSS input */
   font-family: 'Montauk';
   margin-bottom: 0;
 }
@@ -123,97 +166,263 @@ body {
   flex-shrink: 0;
 }
 
-.catering-page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.cater {
-  background-color: white;
-  font-family: 'Fugaz One';
-  color: #5F002B;
-}
-
-.caterbg {
-  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-}
-
-.catering-image-full {
-  max-width: 1177px;
-  height: 380px;
-  object-fit: cover;
+/* =========================================================
+   === FOOTER === 
+========================================================= */
+.footer-container {
   display: flex;
-  margin-left: .7rem;
-  
-
+  justify-content: space-between;
+  align-items: end;
+  color: white;
 }
 
-.catering-inner-block {
-  background-color: white;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  height: 100%;
-  
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  text-align: left;
+  color: #5F002B;
+  margin-left: 11rem;
+  transform: translateX(-140px);
 }
 
-.catering-image-fill {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #5F002B;
+  margin-right: 11rem;
+  transform: translateX(140px);
 }
 
-.catering-text-box h2 {
-  font-family: 'Montauk', serif;
-  color: #333;
+.logo-small {
+  width: 60px;
+  height: auto;
+  margin-bottom: 2px;
+  transform: translateX(55px);
 }
 
-.catering-gallery-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+.footer-right span {
+  font-size: 0.7rem;
+  margin-top: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content:space-between;
+/* =========================================================
+   === TABLET RESPONSIVE (768px - 991px) === 
+========================================================= */
+@media (max-width: 991px) {
+  .navbar {
+    margin-right: 3rem;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: 59px;
+    margin-left: 3rem;
+  }
+
+  .catering-page-container {
+    max-width: 90%;
+  }
+
+  .catering-image-full {
+    max-width: 100%;
+    height: 300px;
+    margin-left: 0;
+  }
+
+  .catering-gallery-image {
+    height: 180px;
+  }
+
+  .menu-subtitle {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    font-size: 18px;
+  }
+
+  .menu-text h5 {
+    font-size: 18px;
+  }
+
+  .menu-item p {
+    font-size: 0.85rem;
+  }
+
+  .menu-price {
+    font-size: 1rem;
+  }
+
+  .footer-left {
+    transform: translateX(-70px);
+    margin-left: 5rem;
+    font-size: 0.65rem;
+  }
+
+  .footer-right {
+    transform: translateX(70px);
+    margin-right: 5rem;
+  }
+
+  .logo-small {
+    transform: translateX(30px);
+    width: 50px;
+  }
+
+  .footer-right span {
+    font-size: 0.65rem;
+  }
+}
+
+/* =========================================================
+   === MOBILE RESPONSIVE (below 768px) === 
+========================================================= */
+@media (max-width: 768px) {
+  .navbar {
+    margin-right: 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+    height: 47px;
+    margin-left: 1rem;
+  }
+
+  .catering-page-container {
+    max-width: 95%;
+  }
+
+  .catering-image-full {
+    height: 250px;
+    margin-left: 0;
+  }
+
+  .catering-gallery-image {
+    height: 150px;
+  }
+
+  .caterh2 {
+    font-size: 1.5rem;
+  }
+
+  .caterp {
+    font-size: 0.9rem;
+  }
+
+  .menu-subtitle {
+    font-size: 18px;
+  }
+
+  .menu-item {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .menu-item-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-dash-spacer {
+    display: none;
+  }
+
+  .menu-text h5 {
+    font-size: 16px;
+  }
+
+  .menu-item p {
+    font-size: 0.8rem;
+  }
+
+  .menu-price {
+    font-size: 0.95rem;
+    margin-top: 5px;
+  }
+
+  .footer-container {
+    flex-direction: column;
     align-items: center;
-   
-    margin-right: 7rem;
+    text-align: center;
+    gap: 15px;
+  }
 
+  .footer-left {
+    transform: translateX(0);
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    transform: translateX(0);
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .logo-small {
+    transform: translateX(0);
+  }
 }
 
-.navbar-brand img {
-   
-    width: 210px;
-    height: 82px;
-    margin-left: 7rem;
-}
+/* =========================================================
+   === SMALL MOBILE RESPONSIVE (below 480px) === 
+========================================================= */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 100px;
+    height: 39px;
+  }
 
-.navbar-nav a,
-.navbar-nav .nav-link {
-    font-family: 'Fugaz One';
-    color: #5F002B;
-   
-}
+  .catering-image-full {
+    height: 200px;
+  }
 
-.navbar-nav .nav-link:hover {
-    color: #F002B0 !important;
-}
+  .catering-gallery-image {
+    height: 120px;
+  }
 
-.navbar{
-    margin-right: 6rem;
-}
+  .caterh2 {
+    font-size: 1.3rem;
+  }
 
+  .caterp {
+    font-size: 0.85rem;
+  }
 
-.caterh2 {
-  font-family: 'Fugaz One';
-  color: #5F002B;
-}
+  .menu-subtitle {
+    font-size: 16px;
+  }
 
-.caterp {
-  font-family: 'Montauk';
-  color: #5F002B;
-  font-weight:400;
-  line-height: .8;
+  .menu-item {
+    font-size: 14px;
+  }
+
+  .menu-text h5 {
+    font-size: 14px;
+  }
+
+  .menu-item p {
+    font-size: 0.75rem;
+  }
+
+  .menu-price {
+    font-size: 0.9rem;
+  }
+
+  .footer-left,
+  .footer-right span {
+    font-size: 0.6rem;
+  }
+
+  .logo-small {
+    width: 40px;
+  }
 }

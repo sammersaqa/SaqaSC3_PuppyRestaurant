@@ -42,15 +42,13 @@ body {
 /* --- Navbar --- */
 .navbar {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(5px);
     margin-right: 6rem;
-
 }
 
 .navbar-brand img {
-   
     width: 210px;
     height: 82px;
     margin-left: 7rem;
@@ -60,7 +58,6 @@ body {
 .navbar-nav .nav-link {
     font-family: 'Fugaz One';
     color: #5F002B;
-   
 }
 
 .navbar-nav .nav-link:hover {
@@ -73,17 +70,15 @@ body {
     align-items: center;
     max-width: 1400px;
     color: white;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 7rem;
 }
-
 
 .footer-left {
     display: flex;
     flex-direction: column;
     gap: 4px;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.70rem;
     opacity: 0.9;
     color: #5F002B;
     font-family: 'Dosis';
@@ -91,29 +86,25 @@ body {
     margin-left: 2rem;
 }
 
-
 .footer-right {
     display: flex;
     flex-direction: column;
     align-items: end;
     text-align: right;
     color: #5F002B;
-    /* transform: translateX(200px); */
-    font-family: 'Montauk';
+    font-family: 'Dosis';
     margin-right: 1rem;
-
 }
 
 .logo-small {
     display: flex;
-    width: 75px;
+    width: 60px;
     height: auto;
-    margin-bottom: 5px;
-    /* transform: translateX(52px); */
+    margin-bottom: 2px;
 }
 
 .footer-right span {
-    font-size: 1rem;
+    font-size: 0.70rem;
 }
 
 .copyright-adobe {
@@ -134,8 +125,6 @@ body {
     background-size: cover;
     height: 300px;
     margin-bottom: 50px;
-
-
 }
 
 .homepage-splash-container {
@@ -146,8 +135,6 @@ body {
     gap: 1rem;
 }
 
-
-
 .main-splash-img {
     width: 38%;
     height: auto;
@@ -156,7 +143,6 @@ body {
     border-radius: 10px;
 }
 
-
 .inner-image {
     width: 80%;
     max-width: 1000px;
@@ -164,42 +150,35 @@ body {
     border-radius: 10px;
     margin-top: 15px;
 }
+
 .splash-text-box {
     color: #5F002B;
     font-family: 'Fugaz One';
     background-color: white;
     border-radius: 0px;
-    
     height: 355px;
 }
 
-.splash-text-box h1{
+.splash-text-box h1 {
     padding-top: 30px;
     padding-left: 30px;
 }
 
-.imgSingle{
+.imgSingle {
     height: 355px;
 }
-
 
 .three {
     display: flex;
     max-width: 800px;
     object-fit: cover;
     margin-top: 2.1rem;
-    
-   
-
-  
-    
 }
 
 .muztext {
     font-size: 16px;
     display: flex;
     font-family: 'Montauk';
-    
     line-height: 1.25;
     background-color: white;
     padding-left: 30px;
@@ -221,7 +200,6 @@ body {
     font-size: 50px;
     font-weight: bolder;
     color: #5F002B;
-
 }
 
 .photo {
@@ -263,21 +241,271 @@ body {
     border: white 8px solid;
 }
 
-@media (max-width: 992px) {
+/* =========================================================
+   === TABLET RESPONSIVE (768px - 991px) === 
+========================================================= */
+@media (max-width: 991px) {
+    /* Navbar */
+    .navbar {
+        margin-right: 3rem;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+        height: 59px;
+        margin-left: 3rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        margin-top: 4rem;
+    }
+
+    .footer-left {
+        margin-left: 1rem;
+        font-size: 0.65rem;
+    }
+
+    .footer-right {
+        margin-right: 0.5rem;
+    }
+
+    .footer-right span {
+        font-size: 0.65rem;
+    }
+
+    .logo-small {
+        width: 50px;
+    }
+
+    /* Home Page */
+    .homehero {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .homepage-splash-container {
+        max-width: 700px;
+    }
+
+    .splash-text-box {
+        height: 280px;
+    }
+
+    .splash-text-box h1 {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.5rem;
+    }
+
+    .imgSingle {
+        height: 280px;
+    }
+
+    .muztext {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .three {
+        max-width: 600px;
+        margin-top: 1.5rem;
+    }
+
+    /* Photos Page */
+    .photo-title {
+        font-size: 40px;
+    }
+
+    .photo {
+        width: 95%;
+        margin-left: 15px;
+    }
+
     .photo-grid {
         grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        padding: 20px;
+    }
+
+    .photo-title-wrapper {
+        max-width: 95%;
+        padding: 10px 0;
     }
 }
 
+/* =========================================================
+   === MOBILE RESPONSIVE (below 768px) === 
+========================================================= */
 @media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        margin-right: 1rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: 47px;
+        margin-left: 1rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        gap: 15px;
+    }
+
+    .footer-left {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Home Page */
+    .homehero {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .homepage-splash-container {
+        flex-direction: column;
+        max-width: 95%;
+        padding: 0 10px;
+    }
+
+    .main-splash-img {
+        width: 100%;
+    }
+
+    .splash-text-box {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .splash-text-box h1 {
+        padding-top: 15px;
+        padding-left: 15px;
+        font-size: 1.3rem;
+    }
+
+    .imgSingle {
+        height: auto;
+        width: 100%;
+    }
+
+    .muztext {
+        font-size: 13px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .three {
+        flex-direction: column;
+        max-width: 95%;
+        margin-top: 1rem;
+    }
+
+    .inner-image {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    /* Photos Page */
+    .photo-title {
+        font-size: 30px;
+    }
+
+    .photo {
+        width: 95%;
+        margin-left: 10px;
+    }
+
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding: 10px;
+        padding: 15px;
         gap: 10px;
+        height: auto;
     }
 
     .grid-image {
         height: 150px;
     }
+
+    .photo-title-wrapper {
+        max-width: 95%;
+        padding: 8px 0;
+    }
+
+    .photo-item {
+        border: white 5px solid;
+    }
 }
 
+/* =========================================================
+   === SMALL MOBILE RESPONSIVE (below 480px) === 
+========================================================= */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar-brand img {
+        width: 100px;
+        height: 39px;
+    }
+
+    /* Footer */
+    .footer-left,
+    .footer-right span {
+        font-size: 0.6rem;
+    }
+
+    .logo-small {
+        width: 40px;
+    }
+
+    /* Home Page */
+    .homehero {
+        height: 150px;
+    }
+
+    .splash-text-box h1 {
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .muztext {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Photos Page */
+    .photo-title {
+        font-size: 24px;
+    }
+
+    .photo-grid {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .grid-image {
+        height: 120px;
+    }
+
+    .photo-item {
+        border: white 3px solid;
+    }
+}
