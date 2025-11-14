@@ -135,7 +135,8 @@ body {
 .menu-item {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #000000;
+  border-color: #5F002B;
 }
 
 .menu-item:last-child {
