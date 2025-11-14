@@ -29,6 +29,7 @@ body {
   opacity: 0.9;
   text-align: left;
   color: #5F002B;
+  transform: translateX(45px);
 }
 
 
@@ -38,12 +39,14 @@ body {
   align-items: center;
   text-align: center;
   color: #5F002B;
+  transform: translateX(-50px);
 }
 
 .logo-small {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
+  transform: translateX(50px);
 }
 
 .footer-right span {
