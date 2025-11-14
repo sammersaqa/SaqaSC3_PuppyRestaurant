@@ -15,21 +15,23 @@
 
 /* === About Section Text Container === */
 .about-story-text {
-    /* Padding is usually handled better by Bootstrap spacing utilities (px, py, ps, pe) */
     padding-left: 15px; /* Default for mobile/small screens */
     padding-right: 15px;
 }
 
 /* === About Section Title (h6) === */
 .about-story-text h6 {
-    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Fugaz One';
     font-size: 1.8rem;
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
-    /* ❌ Removed fixed width: 800px; (Breaks responsiveness) */
     width: auto; 
     text-align: center; /* Center on small screens by default */
+}
+
+.about-Title {
+    font-family: 'Fugaz One';
 }
 
 /* === About Section Paragraph Text === */
