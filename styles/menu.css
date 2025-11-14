@@ -32,6 +32,17 @@ body {
 .menuNav:hover {
   color: #5F002B !important;
 }
+.menu-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px; 
+  padding-right: 15px;
+}
+.menu-title-banner {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 /* Menu section */
 .menu-section {
@@ -158,7 +169,7 @@ body {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
-  transform: translateX(55px);
+  transform: translateX(5px);
 }
 
 /* Tablet Responsive (768px - 991px) */
