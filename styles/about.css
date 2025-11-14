@@ -1,262 +1,387 @@
+/*
+ * ----------------------------------------------------------------
+ * CORE RESPONSIVE LAYOUT STYLES (Mobile-First)
+ * ----------------------------------------------------------------
+ */
+
+/* === About Splash Section === */
+.about-splash-section {
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    /* padding: 10px ; */
+    
+}
+
+/* === About Section Image === */
+.about-image-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 674px;
+}
+
 .about-main-img {
     width: 100%;
-    height: 1060px; 
+    height: 300px;
     object-fit: cover;
     display: block;
-    border-radius: 4px;
+ 
+    max-height: 675px;
 }
 
-.about-grid{
-    height: 100th;
-    display: grid;
-    grid-template-columns: 100px 200px ;
-    background-color: aquamarine;
-    margin: auto;
-    justify-content: center;
+/* === Story Box (White Container) === */
+.story-box {
+    background: white;
+    padding: 20px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+    width: 95%;
+    max-height: 675px;
+    box-sizing: border-box;
+    /* margin: 0; */
 }
 
-
-/* --- Story Splash Text Container Styles (Desktop/Tablet) --- */
-.about-story-text {
-  
-    padding-left: 30px; 
-    padding-right: 15px; 
-}
-
-
-.about-story-text h6 {
+/* === About Section Title (h6) === */
+.about-Title {
     font-family: 'Fugaz One', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
-    width: 800px;
+    text-align: center;
 }
 
-
-.about-splash-container h6{
-  font-family: 'Fugaz One';
-  font-size: 35px;
-  text-align: left;
-}
-/* Style for the paragraph text */
-.about-story-text p {
-    font-family: 'Montauk';
+/* === About Section Paragraph Text === */
+.story-box p {
+    font-family: 'Dosis', sans-serif;
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 0.95rem;
     color: #5F002B;
-}
-
-.col6 {
-  background-color: white;
-}
-
-
-.about-text {
-    background-color: white;
-}
-.about-text p {
-    font-size: 18px; 
-    max-height: 674.5px; 
-    font-family: 'Montauk', serif;
-}
-
-/* --- Team Zone Styles --- */
-.The-Team-grid {
-    padding: 40px 15px;
-   background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    text-align: center;
-}
-
-.team-header {
-    
-    justify-content: center;
-    text-align: center;
-    font-family: 'Fugaz One', sans-serif;
-    font-size: 50px;
-    background-color: white;
-    color: #5F002B;
-}
-
-
-.team-header h6 {
-    font-size: 35px;
-    color: #5F002B;
-}
-
-/* --- Mobile Responsiveness (Screen width up to 767px) --- */
-@media (max-width: 767px) {
-    
-    .about-splash-section {
-      padding-top: 30px !important;
-      padding-bottom: 30px !important;
-    }
-    
-    .about-story-text {
-      /* Reset padding for full-width view */
-      padding-left: 15px; 
-      padding-right: 15px;
-      margin-top: 20px; /* Adds space between the stacked image and text */
-    }
-    
-    .about-story-text h6 {
-      font-size: 1.5rem; /* Smaller title on mobile */
-      text-align: center; /* Center the title on mobile */
-    }
-    
-    .about-story-text p {
-      font-size: 0.95rem; 
-    }
-  }
-
-
-/* --- Tablet Responsiveness (Screen width between 768px and 991px) --- */
-@media (min-width: 768px) and (max-width: 991px) {
-    
-    .about-story-text {
-        padding-left: 20px; 
-    }
-
-    .about-story-text h6 {
-        font-size: 1.6rem;
-    }
-}
-.about-text{
-  background-color: white;
-
-  
-  
-  
-  
-  
-}
-
-.about-text p{
-  font-size: 18px;
-  max-height: 674.5px;
-  background-color: white;
-  font-family: 'Montauk';
-  
-  
-}
-
-.StoryGrillBox{
-    width: 100%;
-    height: 500px;
-    justify-content:flex-end;
-    background-color:black;
-
-}
-.aboutrow{
-   display: flex;
-   justify-content:flex-end; 
-    align-items:flex-end;
-}
-
-.aboutPage-chat-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    justify-content: center;
-    margin: 3rem auto;
-    max-width: 1200px;
-}
-.about-splash-container img{
-  display: grid;
-  
-  
-  height: 674.5px;
-  width: 674.5px;
-}
-
-
-.The-Team-grid {
-    border-radius: 0;
-    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    text-align: center;
-  }
-  
-.card-header{
-  color: #5F002B;
-  border-radius: 0;
-  font-family: 'Fugaz One';
-  text-align: left;
-  padding: 0;
-  background-color: white;
-  font-size: 30px;
-}
-
-.card{
-  color: #5F002B;
-  border-radius: 0;
-  font-family: 'Dosis';
-  font-weight: 450;
-  text-align: left;
-  font-size: 15px;
-}
-
-
-
-.card img{
-  border-radius: 0;
-}
-
-.team-header{
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fugaz One';
-  font-size: 50px;
-  max-width: 1240px;
-  align-items: center;
-  
-}
-.team-header h6{
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fugaz One';
-  font-size: 35px;
-  color: #5F002B;
-}
-
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  color: white;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  text-align: left;
-  font-size: 0.70rem;
-  opacity: 0.9;
-}
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.logo-small {
-  width: 60px;
-  height: auto;
-  margin-bottom: 2px;
-  transform: translateX(40px);
-}
-
-.footer-right span {
-  font-size: 0.70rem;
+    margin-bottom: 1rem;
 }
 
 .text-color {
-  color: #5F002B;
+    color: #5F002B;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * TEAM SECTION STYLES
+ * ----------------------------------------------------------------
+ */
+
+.The-Team-grid {
+    padding: 40px 15px;
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+}
+
+.team-header {
+    background-color: white;
+    max-width: 1300px;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.team-header h6 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 1.8rem;
+    color: #5F002B;
+    margin: 0;
+}
+
+/* === Card Styling === */
+.card {
+    color: #5F002B;
+    
+    font-family: 'Montauk';
+    font-weight: 450;
+    text-align: left;
+    font-size: 0.95rem;
+  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === Card Image Standardization === */
+.card-img-container {
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.card-img-top-custom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-body {
+    padding: 1.25rem;
+    border-radius: 0;
+}
+
+.card-header {
+    color: #5F002B;
+    font-family: 'Fugaz One', sans-serif;
+    text-align: left;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    border: none;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * FOOTER STYLES
+ * ----------------------------------------------------------------
+ */
+.footer-container {
+    padding: 20px 15px;
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    margin-left: 4%             ;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-left: 3rem;
+
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    gap: 8px;
+    transform: translateX(-50px);
+}
+
+.logo-small {
+    width: 50px;
+    height: auto;
+    transform: translateX(10px);
+}
+
+.footer-right span {
+    font-size: 0.8rem;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - TABLET (768px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 768px) {
+    /* About Section */
+    .about-splash-section {
+        padding: 40px 0;
+    }
+
+    .about-image-wrapper {
+        margin-bottom: 0;
+    }
+
+    .about-main-img {
+        height: 450px;
+    }
+
+    .story-box {
+        padding: 40px 30px;
+        margin-left: 20px;
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .about-Title {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .story-box p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* Team Section */
+    .team-header h6 {
+        font-size: 2rem;
+    }
+
+    .card-img-container {
+        height: 220px;
+    }
+
+    .card-header {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-right {
+        flex-direction: row;
+        margin-top: 0;
+        gap: 10px;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - DESKTOP (992px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 992px) {
+    /* About Section */
+    .about-splash-section {
+        padding: 60px 0;
+    }
+
+    .about-main-img {
+        height: 600px;
+    }
+
+    .story-box {
+        padding: 50px 40px;
+        margin-left: 30px;
+        height: 600px;
+    }
+
+    .about-Title {
+        font-size: 2rem;
+    }
+
+    .story-box p {
+        font-size: 1.1rem;
+    }
+
+    /* Team Section */
+    .The-Team-grid {
+        padding: 60px 30px;
+    }
+
+    .team-header {
+        padding: 1.5rem 0;
+    }
+
+    .team-header h6 {
+        font-size: 2.2rem;
+    }
+
+    .card-img-container {
+        height: 250px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 25px 40px;
+    }
+
+    .footer-left {
+        font-size: 0.9rem;
+    }
+
+    .logo-small {
+        width: 60px;
+    }
+
+    .footer-right span {
+        font-size: 0.85rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - LARGE DESKTOP (1200px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 1200px) {
+    .about-main-img {
+        height: 700px;
+    }
+
+    .story-box {
+        height: 700px;
+        padding: 60px 50px;
+    }
+
+    .about-Title {
+        font-size: 2.2rem;
+    }
+
+    .story-box p {
+        font-size: 1.15rem;
+    }
+
+    .team-header h6 {
+        font-size: 2.5rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - EXTRA LARGE DESKTOP (1400px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 1400px) {
+    .about-main-img {
+        height: 800px;
+    }
+
+    .story-box {
+        height: 800px;
+    }
+}
+
+/* 
+ * ----------------------------------------------------------------
+ * UTILITY CLASSES
+ * ----------------------------------------------------------------
+ */
+
+/* Smooth scrolling for story box */
+.story-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.story-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    
+}
+
+.story-box::-webkit-scrollbar-thumb {
+    background: #980051;
+ 
+}
+
+.story-box::-webkit-scrollbar-thumb:hover {
+    background: #5F002B;
 }

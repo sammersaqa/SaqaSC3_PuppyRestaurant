@@ -3,7 +3,11 @@ body {
   padding: 0;
 }
 
-
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
+}
 .menu-section {
   margin-bottom: 10px;
   padding-bottom: 0;
@@ -13,10 +17,10 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 40px;
-  width: 100%;
-  box-sizing: border-box;
+  align-items: end;
+  /* padding: 10px 40px; */
+  /* width: max-content; */
+  /* box-sizing: border-box; */
   color: white;
 }
 
@@ -29,6 +33,8 @@ body {
   opacity: 0.9;
   text-align: left;
   color: #5F002B;
+  margin-left: 11rem;
+  transform: translateX(-140px);
 }
 
 
@@ -38,12 +44,16 @@ body {
   align-items: center;
   text-align: center;
   color: #5F002B;
+  margin-right: 11rem;
+  transform: translateX(140px);
+ 
 }
 
 .logo-small {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
+  transform: translateX(55px);
 }
 
 .footer-right span {
@@ -81,7 +91,7 @@ body {
 
 .item-dash-spacer {
   flex-grow: 1;
-  border-bottom: 1px dashed #980051;
+  border-bottom: 1px dashed #5F002B;
   height: 1em;
   margin: 0 10px;
 }
@@ -111,19 +121,19 @@ body {
 .menu-price {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #980051;
+  color: #5F002B;
   flex-shrink: 0;
 }
 
 .catering-page-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .cater {
   background-color: white;
   font-family: 'Fugaz One';
-  color: #980051;
+  color: #5F002B;
 }
 
 .caterbg {
@@ -131,16 +141,20 @@ body {
 }
 
 .catering-image-full {
-  width: 100%;
+  max-width: 1177px;
   height: 380px;
   object-fit: cover;
-  display: block;
+  display: flex;
+  margin-left: .7rem;
+  
+
 }
 
 .catering-inner-block {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   height: 100%;
+  
 }
 
 .catering-image-fill {
@@ -162,18 +176,46 @@ body {
   display: block;
 }
 
-.caterNav {
-    font-family: 'Fugaz One';
-  color: #980051;
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    margin-right: 7rem;
+
 }
+
+.navbar-brand img {
+   
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
+}
+
+.navbar-nav a,
+.navbar-nav .nav-link {
+    font-family: 'Fugaz One';
+    color: #5F002B;
+   
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F002B0 !important;
+}
+
+.navbar{
+    margin-right: 6rem;
+}
+
 
 .caterh2 {
   font-family: 'Fugaz One';
-  color: #980051;
+  color: #5F002B;
 }
 
 .caterp {
   font-family: 'Montauk';
-  color: #980051;
+  color: #5F002B;
   font-weight:400;
+  line-height: .8;
 }
