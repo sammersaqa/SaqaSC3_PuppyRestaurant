@@ -42,9 +42,10 @@ body {
 /* --- Navbar --- */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     backdrop-filter: blur(5px);
+    margin-right: 7rem;
 
 }
 
@@ -59,6 +60,7 @@ body {
 .navbar-nav .nav-link {
     font-family: 'Fugaz One';
     color: #5F002B;
+   
 }
 
 .navbar-nav .nav-link:hover {
@@ -85,6 +87,7 @@ body {
     color: #5F002B;
     font-family: 'Dosis';
     font-weight: 500;
+    margin-left: 1rem;
 }
 
 
@@ -96,6 +99,7 @@ body {
     color: #5F002B;
     /* transform: translateX(200px); */
     font-family: 'Dosis';
+    margin-right: 1rem;
 }
 
 .logo-small {
@@ -158,20 +162,18 @@ body {
     border-radius: 10px;
     margin-top: 15px;
 }
-
 .splash-text-box {
     color: #5F002B;
     font-family: 'Fugaz One';
     background-color: white;
     border-radius: 0px;
     
-    border-style: solid;
-    border-color: white;
-    border-width: 1rem;
-    
-   
-    
-    
+    height: 355px;
+}
+
+.splash-text-box h1{
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .imgSingle{
@@ -180,15 +182,32 @@ body {
 
 
 .three {
-   display: flex;
-max-width: 800px;
-justify-content: center;
+    display: flex;
+    max-width: 800px;
+    object-fit: cover;
+    margin-top: 2.1rem;
+    
+   
+
+  
+    
 }
 
 .muztext {
+    font-size: 16px;
     display: flex;
-    font-family: 'Dosis';
-    font-weight: 500;
+    font-family: 'Montauk';
+    
+    line-height: 1.25;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
 }
 
 /* =========================================================

@@ -54,7 +54,7 @@
 .about-text p {
     font-size: .5rem; 
     max-height: none;
-    /* font-family: 'Montauk'; */
+ 
 }
 
 
@@ -117,11 +117,7 @@
 }
 
 
-/*
- * ----------------------------------------------------------------
- * FOOTER STYLES (Using Bootstrap flex utilities in HTML is better, but here's the CSS)
- * ----------------------------------------------------------------
- */
+
 .footer-container {
     padding: 20px;
     color: white;
@@ -139,7 +135,7 @@
   font-size: 0.70rem;
   opacity: 0.9;
   margin-left: 7rem;
-  /* transform: translateX(50px); */
+
 }
 
 .footer-right {
@@ -147,22 +143,22 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* transform: translateX(-50px); */
+
 }
 
 .logo-small {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
-  /* transform: translateX(50px); */
+ 
 
     gap: 4px;
-    font-size: 0.9rem; /* Slightly larger for readability */
+    font-size: 0.9rem; 
     opacity: 0.9;
 }
 
 .logo-small {
-    width: 50px; /* Consistent logo size */
+    width: 50px; 
     height: auto;
     margin-bottom: 5px; 
     transform: none; 
