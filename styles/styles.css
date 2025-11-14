@@ -45,7 +45,7 @@ body {
     justify-content:space-between;
     align-items: center;
     backdrop-filter: blur(5px);
-    margin-right: 7rem;
+    margin-right: 6rem;
 
 }
 
@@ -87,7 +87,7 @@ body {
     color: #5F002B;
     font-family: 'Dosis';
     font-weight: 500;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 

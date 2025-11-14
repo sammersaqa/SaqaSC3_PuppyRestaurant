@@ -10,27 +10,34 @@ body {
   background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
 }
 
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    margin-right: 7rem;
+
+}
+
 .navbar-brand img {
-  height: 50px;
-  width: auto;
+   
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
 }
 
-.navbar-toggler {
-  border-color: #980051;
+.navbar-nav a,
+.navbar-nav .nav-link {
+    font-family: 'Fugaz One';
+    color: #5F002B;
+   
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23980051' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-nav .nav-link:hover {
+    color: #F002B0 !important;
 }
-
-.menuNav {
-  font-family: 'Fugaz One';
-  color: #980051 !important;
-  padding: 8px 15px !important;
-}
-
-.menuNav:hover {
-  color: #5F002B !important;
+.navbar{
+    margin-right: 6rem;
 }
 
 /* Menu section */
@@ -45,16 +52,17 @@ body {
 
 .menu-title-banner {
   margin-bottom: 30px;
+  height: auto;
 }
 
 .menu.cater {
   background-color: white;
   font-family: 'Fugaz One';
   width: 1295px;
-  max-width: 95%;
-  color: #980051;
-  padding: 20px;
-  border-radius: 8px;
+  max-width: 100%;
+  color: #5F002B;
+
+  
   display: inline-block;
 }
 
@@ -83,15 +91,19 @@ body {
 
 .menu-title {
   font-family: 'Fugaz One';
-  color: #980051;
+  color: #5F002B;
   font-size: 30px;
   margin-bottom: 0.5rem;
 }
-
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
+}
 .menu-subtitle {
   color: #5F002B;
   font-size: 0.9rem;
-  font-family: 'Montauk, Regular';
+  font-family: 'Montauk';
   margin-bottom: 1.5rem;
   font-style: italic;
 }
@@ -108,14 +120,14 @@ body {
 
 .menu-item h5 {
   color: #5F002B;
-  font-family: 'Montauk, Regular';
-  font-size: 1.1rem;
+  font-family: 'Montauk';
+  font-size: 22px;
   margin-bottom: 0.5rem;
 }
 
 .menu-item p {
   color: #5F002B;
-  font-family: 'Montauk, Regular';
+  font-family: 'Montauk';
   font-size: 0.9rem;
   margin: 0;
 }
@@ -126,7 +138,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 30px 50px;
+ 
   color: #5F002B;
   box-sizing: border-box;
   width: 100%;
@@ -138,9 +150,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  margin-left: 7rem;
   font-size: 0.9rem;
   color: #5F002B;
-  transform: translateX(32px);
+  
 }
 
 /* Right Side: Logo + Text */
@@ -150,7 +163,7 @@ body {
   align-items: flex-end;
   text-align: right;
   gap: 2px;
-  transform: translateX(-33px);
+
   color: #5F002B;
 }
 
@@ -158,7 +171,7 @@ body {
   width: 60px;
   height: auto;
   margin-bottom: 2px;
-  transform: translateX(55px);
+
 }
 
 /* Tablet Responsive (768px - 991px) */
