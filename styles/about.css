@@ -24,7 +24,7 @@
     object-fit: cover;
     display: block;
  
-    max-height: 675px;
+    max-height: 605px;
 }
 
 /* === Story Box (White Container) === */
@@ -33,7 +33,7 @@
     padding: 20px;
     /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
     width: 95%;
-    max-height: 675px;
+    max-height: 605px;
     box-sizing: border-box;
     /* margin: 0; */
 }
@@ -50,11 +50,11 @@
 
 /* === About Section Paragraph Text === */
 .story-box p {
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    font-size: 0.95rem;
+    font-family: 'Montauk';
+    line-height: .8;
+    font-size: 12px;
     color: #5F002B;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .text-color {
@@ -145,40 +145,52 @@
  * ----------------------------------------------------------------
  */
 .footer-container {
-    padding: 20px 15px;
-    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    margin-left: 4%             ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
+
 
 .footer-left {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    text-align: center;
-    font-size: 0.85rem;
+    text-align: left;
+    font-size: 10rem;
     opacity: 0.9;
-    margin-left: 3rem;
-
+    color: #5F002B;
+    font-family: 'Dosis';
+    font-weight: 500;
+    margin-left: 7rem;
 }
+
 
 .footer-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 15px;
-    gap: 8px;
-    transform: translateX(-50px);
+    align-items: end;
+    text-align: right;
+    color: #5F002B;
+    /* transform: translateX(200px); */
+    font-family: 'Montauk';
+    margin-right: 1rem;
+
 }
 
 .logo-small {
-    width: 50px;
-    height: auto;
-    transform: translateX(10px);
+    display: flex;
+    width: 100px;
+    
+    margin-bottom: 5px;
+    /* transform: translateX(52px); */
 }
 
 .footer-right span {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /*
@@ -368,7 +380,7 @@
  */
 
 /* Smooth scrolling for story box */
-.story-box::-webkit-scrollbar {
+/* .story-box::-webkit-scrollbar {
     width: 5px;
 }
 
@@ -384,4 +396,4 @@
 
 .story-box::-webkit-scrollbar-thumb:hover {
     background: #5F002B;
-}
+} */
