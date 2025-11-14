@@ -7,13 +7,15 @@
 /* === About Splash Section === */
 .about-splash-section {
     background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    padding: 20px 0;
+    /* padding: 10px ; */
+    
 }
 
 /* === About Section Image === */
 .about-image-wrapper {
     width: 100%;
     margin-bottom: 20px;
+    max-height: 674px;
 }
 
 .about-main-img {
@@ -21,19 +23,19 @@
     height: 300px;
     object-fit: cover;
     display: block;
-    border-radius: 4px;
+ 
+    max-height: 675px;
 }
 
 /* === Story Box (White Container) === */
 .story-box {
     background: white;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    width: 100%;
-    height: auto;
+    padding: 20px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+    width: 95%;
+    max-height: 675px;
     box-sizing: border-box;
-    margin: 0;
+    /* margin: 0; */
 }
 
 /* === About Section Title (h6) === */
@@ -361,17 +363,17 @@
 
 /* Smooth scrolling for story box */
 .story-box::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 
 .story-box::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 10px;
+    
 }
 
 .story-box::-webkit-scrollbar-thumb {
     background: #980051;
-    border-radius: 10px;
+ 
 }
 
 .story-box::-webkit-scrollbar-thumb:hover {
