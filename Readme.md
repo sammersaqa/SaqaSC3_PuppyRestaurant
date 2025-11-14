@@ -8,6 +8,10 @@
 
 ## Person who Peer Reviewed your assignment :
 
+https://xd.adobe.com/spec/5c97cdf9-bda2-47f1-7c8f-27c7fd5963dd-2aa6/
+
+https://github.com/sammersaqa/SaqaSC3_PuppyRestaurant.git
+
 
 Key Features
 - Mobile-Friendly Layout – Built with Bootstrap so it adjusts to different screen sizes
