@@ -153,6 +153,7 @@
     font-size: 0.85rem;
     opacity: 0.9;
     margin-left: 7.5rem;
+    transform: translateX(-50px);
 }
 
 .footer-right {
@@ -162,11 +163,13 @@
     text-align: center;
     margin-top: 15px;
     gap: 8px;
+    transform: translateX(-50px);
 }
 
 .logo-small {
     width: 50px;
     height: auto;
+    transform: translateX(10px);
 }
 
 .footer-right span {
