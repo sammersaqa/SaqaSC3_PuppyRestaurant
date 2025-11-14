@@ -130,8 +130,7 @@ body {
   color: #5F002B;
   box-sizing: border-box;
   width: 100%;
-  background-color: white;
-}
+  background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
 
 /* Left Side Text */
 .footer-left {
