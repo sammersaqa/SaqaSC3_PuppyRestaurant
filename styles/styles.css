@@ -612,6 +612,7 @@ body {
 
     .three {
         max-width: 1000px;
+        margin-top: 50px;
     }
 
     .inner-image {
