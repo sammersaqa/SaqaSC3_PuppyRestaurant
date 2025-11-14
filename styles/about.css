@@ -4,10 +4,17 @@
  * ----------------------------------------------------------------
  */
 
+<<<<<<< HEAD
+.about-main-img {
+  width: 674.5px;   
+  height: 150px;    
+  object-fit:cover; 
+=======
 /* === About Splash Section === */
 .about-splash-section {
     background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
     padding: 20px 0;
+>>>>>>> 96c8f12a0ff455d657c1e18fbc9c66b5a79606cb
 }
 
 /* === About Section Image === */
@@ -182,14 +189,22 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  gap: 4px; 
+transition: translateX(-400px);
 
 }
 
 .logo-small {
-    width: 60px;
-    height: auto;
-    margin-bottom: 2px;
-
+  width: 60px;
+  height: auto;
+  opacity: 0.70;
+  transition: translateX(-100px);
+  margin-bottom: 2px;
+ 
 
     gap: 4px;
     font-size: 0.9rem;
@@ -382,18 +397,23 @@
         height: 800px;
     }
 
-    .story-box {
-        background: white;
-        padding: 33px;
-
-
-
-        max-width: 950px;
-
-        height: 526px;
-
-        /* box-sizing: border-box; */
-    }
+ .story-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin-left: 20px;
+}
+  /* padding: 33px;
+ 
+  
+  
+  max-width: 950px;
+  
+  height: 526px; */
+  
+  /* box-sizing: border-box; */
+}
 
     @font-face {
         font-family: 'Montauk';
@@ -410,7 +430,6 @@
 
     }
 
-    .navbar {
-        margin-right: 6rem;
-    }
+.navbar{
+    margin-right: 6rem;
 }
