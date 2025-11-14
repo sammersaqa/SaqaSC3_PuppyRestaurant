@@ -17,11 +17,11 @@
 }
 
 .about-main-img {
-    width: 100%;
-    height: 300px;
+    width: 675px;
+    max-height: 675px; /* Optional: Sets a reasonable maximum height on large screens */
     object-fit: cover;
     display: block;
-    border-radius: 4px;
+    
 }
 
 /* === Story Box (White Container) === */
@@ -43,20 +43,35 @@
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
-    text-align: center;
+    width: auto; 
+    text-align: center; /* Center on small screens by default */
+}
+
+.about-Title {
+    font-family: 'Fugaz One';
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: .5rem;
 }
 
 /* === About Section Paragraph Text === */
-.story-box p {
-    font-family: 'Dosis', sans-serif;
+.about-story-text p {
+    
     line-height: 1.6;
     font-size: 0.95rem;
     color: #5F002B;
     margin-bottom: 1rem;
 }
 
-.text-color {
-    color: #5F002B;
+
+
+.col6, .about-text {
+    background-color: white; /* Ensures consistent background */
+}
+.about-text p {
+    font-size: .5rem; 
+    max-height: none;
+ 
 }
 
 /*
@@ -72,9 +87,10 @@
 
 .team-header {
     background-color: white;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem 0;
+     max-width: 1300px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem ;
 }
 
 .team-header h6 {
@@ -104,13 +120,12 @@
 
 /* === Card Image Standardization === */
 .card-img-container {
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
+    max-height: 536px; /* Fixed height for the container to crop images uniformly */
+    overflow:hidden;
 }
 
 .card-img-top-custom {
-    width: 100%;
+    max-width: 536px;
     height: 100%;
     object-fit: cover;
 }
@@ -135,36 +150,48 @@
     line-height: 1.5;
 }
 
-/*
- * ----------------------------------------------------------------
- * FOOTER STYLES
- * ----------------------------------------------------------------
- */
+
 .footer-container {
-    padding: 20px 15px;
-    background-image: url(./RestaurantMockupFiles/assets/bgtexture.jpg);
+    padding: 20px;
+    color: white;
+
+    flex-direction: column;
+  display: flex;
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+ align-items: left;
+  text-align: left;
+  font-size: 0.70rem;
+  opacity: 0.9;
+  margin-left: 7rem;
+
 }
 
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 15px;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
 }
 
 .logo-small {
-    width: 50px;
+  width: 60px;
+  height: auto;
+  margin-bottom: 2px;
+ 
+
+    gap: 4px;
+    font-size: 0.9rem; 
+    opacity: 0.9;
+}
+
+.logo-small {
+    width: 50px; 
     height: auto;
 }
 
@@ -347,32 +374,34 @@
         height: 800px;
     }
 
-    .story-box {
-        height: 800px;
-    }
+  .story-box {
+  background: white;
+  padding: 33px;
+ 
+  
+  
+  max-width: 950px;
+  
+  height: 526px;
+  
+  /* box-sizing: border-box; */
 }
 
-/* 
- * ----------------------------------------------------------------
- * UTILITY CLASSES
- * ----------------------------------------------------------------
- */
-
-/* Smooth scrolling for story box */
-.story-box::-webkit-scrollbar {
-    width: 8px;
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
+    
 }
 
-.story-box::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+.main-about-text{
+    font-size: 16px;
+    font-family: 'Montauk';
+    color: #85003a;
+    line-height: 1.1;
+    
 }
 
-.story-box::-webkit-scrollbar-thumb {
-    background: #980051;
-    border-radius: 10px;
-}
-
-.story-box::-webkit-scrollbar-thumb:hover {
-    background: #5F002B;
+.navbar{
+    margin-right: 6rem;
 }
