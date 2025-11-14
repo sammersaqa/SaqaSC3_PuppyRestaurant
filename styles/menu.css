@@ -46,11 +46,9 @@ body {
   align-items: flex-end;
   text-align: right;
   gap: 2px;
-
-  transform: translate(-32px); 
+  transform: translateX(-33px); 
   margin-right: 0;
   margin-top: 0;
-  transform: translateY(-4px);
    color: #5F002B;
 
 }
@@ -61,7 +59,7 @@ body {
   margin-bottom: 2px;    
   margin-right: 0;      
   margin-left: 0;       
-  transform: translate(2px); 
+  transform: translateX(55px); 
 }
 
 
