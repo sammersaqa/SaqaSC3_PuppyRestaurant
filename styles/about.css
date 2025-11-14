@@ -1,236 +1,128 @@
+/*
+ * ----------------------------------------------------------------
+ * CORE RESPONSIVE LAYOUT STYLES (Mobile-First)
+ * ----------------------------------------------------------------
+ */
+
+/* === About Section Image === */
 .about-main-img {
     width: 100%;
-    height: 1060px; 
+    height: 1000px; /* Optional: Sets a reasonable maximum height on large screens */
     object-fit: cover;
     display: block;
     border-radius: 4px;
 }
 
-.about-grid{
-    height: 100th;
-    display: grid;
-    grid-template-columns: 100px 200px ;
-    background-color: aquamarine;
-    margin: auto;
-    justify-content: center;
-}
-
-
-/* --- Story Splash Text Container Styles (Desktop/Tablet) --- */
+/* === About Section Text Container === */
 .about-story-text {
-  
-    padding-left: 30px; 
-    padding-right: 15px; 
+    /* Padding is usually handled better by Bootstrap spacing utilities (px, py, ps, pe) */
+    padding-left: 15px; /* Default for mobile/small screens */
+    padding-right: 15px;
 }
 
-
+/* === About Section Title (h6) === */
 .about-story-text h6 {
     font-family: 'Fugaz One', sans-serif;
     font-size: 1.8rem;
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
-    width: 800px;
+    /* ❌ Removed fixed width: 800px; (Breaks responsiveness) */
+    width: auto; 
+    text-align: center; /* Center on small screens by default */
 }
 
-
-.about-splash-container h6{
-  font-family: 'Fugaz One';
-  font-size: 35px;
-  text-align: left;
-}
-/* Style for the paragraph text */
+/* === About Section Paragraph Text === */
 .about-story-text p {
     font-family: 'Montauk';
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 1rem; /* Smaller font for better readability on small screens */
     color: #5F002B;
+    max-height: none;
 }
 
-.col6 {
-  background-color: white;
-}
-
-
-.about-text {
-    background-color: white;
+.col6, .about-text {
+    background-color: white; /* Ensures consistent background */
 }
 .about-text p {
-    font-size: 18px; 
-    max-height: 674.5px; 
+    font-size: 1rem; 
+    max-height: none;
     font-family: 'Montauk', serif;
 }
 
-/* --- Team Zone Styles --- */
+
+/*
+ * ----------------------------------------------------------------
+ * TEAM SECTION STYLES
+ * ----------------------------------------------------------------
+ */
+
 .The-Team-grid {
     padding: 40px 15px;
-   background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
     text-align: center;
 }
 
 .team-header {
-    
-    justify-content: center;
-    text-align: center;
-    font-family: 'Fugaz One', sans-serif;
-    font-size: 50px;
     background-color: white;
-    color: #5F002B;
+    /* max-width: 1240px; (Keep only if you want to cap the width of the header text area) */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
 }
-
 
 .team-header h6 {
-    font-size: 35px;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 2.2rem; /* Adjusted for better mobile scaling */
     color: #5F002B;
+    margin: 0;
 }
 
-/* --- Mobile Responsiveness (Screen width up to 767px) --- */
-@media (max-width: 767px) {
-    
-    .about-splash-section {
-      padding-top: 30px !important;
-      padding-bottom: 30px !important;
-    }
-    
-    .about-story-text {
-      /* Reset padding for full-width view */
-      padding-left: 15px; 
-      padding-right: 15px;
-      margin-top: 20px; /* Adds space between the stacked image and text */
-    }
-    
-    .about-story-text h6 {
-      font-size: 1.5rem; /* Smaller title on mobile */
-      text-align: center; /* Center the title on mobile */
-    }
-    
-    .about-story-text p {
-      font-size: 0.95rem; 
-    }
-  }
-
-
-/* --- Tablet Responsiveness (Screen width between 768px and 991px) --- */
-@media (min-width: 768px) and (max-width: 991px) {
-    
-    .about-story-text {
-        padding-left: 20px; 
-    }
-
-    .about-story-text h6 {
-        font-size: 1.6rem;
-    }
-}
-.about-text{
-  background-color: white;
-
-  
-  
-  
-  
-  
+/* === Card Image Standardization (Ensures cards are the same height) === */
+.card-img-container {
+    height: 250px; /* Fixed height for the container to crop images uniformly */
+    overflow: hidden;
 }
 
-.about-text p{
-  font-size: 18px;
-  max-height: 674.5px;
-  background-color: white;
-  font-family: 'Montauk';
-  
-  
-}
-
-.StoryGrillBox{
+.card-img-top-custom {
     width: 100%;
-    height: 500px;
-    justify-content:flex-end;
-    background-color:black;
-
-}
-.aboutrow{
-   display: flex;
-   justify-content:flex-end; 
-    align-items:flex-end;
-}
-
-.aboutPage-chat-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    justify-content: center;
-    margin: 3rem auto;
-    max-width: 1200px;
-}
-.about-splash-container img{
-  display: grid;
-  
-  
-  height: 674.5px;
-  width: 674.5px;
-}
-
-
-.The-Team-grid {
+    height: 100%;
+    object-fit: cover; /* Crops image to fit container */
     border-radius: 0;
-    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    text-align: center;
-  }
-  
-.card-header{
-  color: #5F002B;
-  border-radius: 0;
-  font-family: 'Fugaz One';
-  text-align: left;
-  padding: 0;
-  background-color: white;
-  font-size: 30px;
 }
 
-.card{
-  color: #5F002B;
-  border-radius: 0;
-  font-family: 'Dosis';
-  font-weight: 450;
-  text-align: left;
-  font-size: 15px;
+.card-header {
+    color: #5F002B;
+    font-family: 'Fugaz One';
+    text-align: left;
+    padding: 0;
+    background-color: white;
+    font-size: 1.5rem; /* Use rem for scalability */
+}
+
+.card {
+    color: #5F002B;
+    border-radius: 0;
+    font-family: 'Dosis';
+    font-weight: 450;
+    text-align: left;
+    font-size: 1rem; 
 }
 
 
-
-.card img{
-  border-radius: 0;
-}
-
-.team-header{
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fugaz One';
-  font-size: 50px;
-  max-width: 1240px;
-  align-items: center;
-  
-}
-.team-header h6{
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fugaz One';
-  font-size: 35px;
-  color: #5F002B;
-}
-
-
+/*
+ * ----------------------------------------------------------------
+ * FOOTER STYLES (Using Bootstrap flex utilities in HTML is better, but here's the CSS)
+ * ----------------------------------------------------------------
+ */
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  color: white;
+    padding: 20px;
+    color: white;
+
 }
 
 .footer-left {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -253,12 +145,85 @@
   height: auto;
   margin-bottom: 2px;
   transform: translateX(50px);
+=======
+    gap: 4px;
+    font-size: 0.9rem; /* Slightly larger for readability */
+    opacity: 0.9;
+}
+
+.logo-small {
+    width: 50px; /* Consistent logo size */
+    height: auto;
+    margin-bottom: 5px; 
+    transform: none; 
+>>>>>>> 2b8b79828fbb81886d7a76b3f527ea97a64211d0
 }
 
 .footer-right span {
-  font-size: 0.70rem;
+    font-size: 0.8rem;
 }
 
 .text-color {
-  color: #5F002B;
+    color: #5F002B;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES (Fine-tuning for different screen sizes)
+ * ----------------------------------------------------------------
+ */
+
+/* === Mobile (Screen width up to 767px) === */
+@media (max-width: 767px) {
+    .about-story-text {
+        padding-left: 1rem; 
+        padding-right: 1rem;
+        margin-top: 1rem; 
+    }
+    
+    .about-story-text h6 {
+        font-size: 1.5rem; 
+        text-align: center; /* Override default left-align for stacking */
+    }
+    
+    .about-story-text p {
+        font-size: 0.9rem; 
+    }
+    
+    .team-header h6 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* === Tablet (Screen width 768px and up) === */
+@media (min-width: 768px) {
+    .about-story-text {
+        /* Align text left when side-by-side */
+        text-align: left;
+        /* Padding adjustments for desktop layout */
+        padding-left: 30px; 
+        padding-right: 15px; 
+    }
+    
+    .about-story-text h6 {
+        font-size: 1.8rem;
+        text-align: left; /* Align back to left */
+    }
+    
+    .about-story-text p {
+        font-size: 1.1rem; 
+    }
+}
+
+
+/* === Desktop (Screen width 992px and up) === */
+@media (min-width: 992px) {
+    .about-story-text h6 {
+        font-size: 2rem;
+    }
+    
+    .about-story-text p {
+        font-size: 1.25rem; 
+    }
 }
