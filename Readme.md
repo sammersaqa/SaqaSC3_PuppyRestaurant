@@ -29,6 +29,13 @@ Design Elements
 - Grid & Spacing: Xavier made sure everything was spaced evenly and looked neat
 - Fonts & Logos: Kellen and Xavier picked fonts and logos that matched the theme
 
+
+
+
+
+
+######################## BIGGEST OBSTACLE WAS TOO MANY CSS FILES ############################
+
 Tools Used
 - HTML – for building the structure
 - CSS – for styling the pages
