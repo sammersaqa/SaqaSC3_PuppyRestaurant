@@ -40,3 +40,10 @@ Tools Used
 - Google Fonts – Dosis and Fugaz One for a playful look
 
 ######################## BIGGEST OBSTACLE WAS TOO MANY CSS FILES ############################
+* Dev review
+ * reviewer: Jose Martinez
+  * Index.html footer has to much space at the bottom across all screens also hamburger dropdown menu needs space on the left all across pages
+  * about.html footer needs to be fixed on small screen for mobile also hamburger dropdown menu needs space on the left all across pages
+  * menu.html footer needs to consistent across all pages fix footer on small screen also hamburger dropdown menu needs space on the left all across pages
+  * catering.html looks good on large screen. breaks on med and small screen. fix responsiveness make sure footer is the same across all pages. also hamburger dropdown menu needs space on the left all across pages
+  * photos.html looks good. Only fix hamburger dropdown menu needs space on the left all across pages
