@@ -42,34 +42,38 @@ body {
 /* --- Navbar --- */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     backdrop-filter: blur(5px);
+    margin-right: 7rem;
 
 }
 
 .navbar-brand img {
-    height: 50px;
-    width: auto;
+   
+    width: 210px;
+    height: 82px;
+    margin-left: 7rem;
 }
 
 .navbar-nav a,
 .navbar-nav .nav-link {
     font-family: 'Fugaz One';
-    color: #980051;
+    color: #5F002B;
+   
 }
 
 .navbar-nav .nav-link:hover {
-    color: #8A0040 !important;
+    color: #F002B0 !important;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-
+    max-width: 1400px;
     color: white;
+    margin-top: 7rem;
 }
 
 
@@ -81,23 +85,29 @@ body {
     font-size: 0.70rem;
     opacity: 0.9;
     color: #5F002B;
+    font-family: 'Dosis';
+    font-weight: 500;
+    margin-left: 1rem;
 }
 
 
 .footer-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: end;
+    text-align: right;
     color: #5F002B;
-    transform: translateX(200px);
+    /* transform: translateX(200px); */
+    font-family: 'Dosis';
+    margin-right: 1rem;
 }
 
 .logo-small {
+    display: flex;
     width: 60px;
     height: auto;
     margin-bottom: 2px;
-    transform: translateX(52px);
+    /* transform: translateX(52px); */
 }
 
 .footer-right span {
@@ -120,20 +130,21 @@ body {
 .homehero {
     background: url(/RestaurantMockupFiles/assets/homeHero.jpg) no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 300px;
     margin-bottom: 50px;
+
 
 }
 
 .homepage-splash-container {
     display: flex;
-
     align-items: center;
-
+    max-width: 900px;
     justify-content: center;
-
-
+    gap: 1rem;
 }
+
+
 
 .main-splash-img {
     width: 38%;
@@ -151,25 +162,52 @@ body {
     border-radius: 10px;
     margin-top: 15px;
 }
-
 .splash-text-box {
     color: #5F002B;
-    font-family: 'Fugaz One, Regular';
+    font-family: 'Fugaz One';
     background-color: white;
     border-radius: 0px;
-    font-family: 'Montauk', sans-serif;
-    height: 400px;
-    width: 1000px;
-    align-content: center;
-    margin-left: 15px;
-
+    
+    height: 355px;
 }
 
-.three {
-    width: 999px;
-    height: 228px;
-    object-fit: cover;
+.splash-text-box h1{
+    padding-top: 30px;
+    padding-left: 30px;
+}
 
+.imgSingle{
+    height: 355px;
+}
+
+
+.three {
+    display: flex;
+    max-width: 800px;
+    object-fit: cover;
+    margin-top: 2.1rem;
+    
+   
+
+  
+    
+}
+
+.muztext {
+    font-size: 16px;
+    display: flex;
+    font-family: 'Montauk';
+    
+    line-height: 1.25;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
 }
 
 /* =========================================================
@@ -240,3 +278,4 @@ body {
         height: 150px;
     }
 }
+

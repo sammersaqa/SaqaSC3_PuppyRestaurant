@@ -4,38 +4,70 @@
  * ----------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 .about-main-img {
   width: 674.5px;   
   height: 150px;    
   object-fit:cover; 
+=======
+/* === About Splash Section === */
+.about-splash-section {
+    background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
+    padding: 20px 0;
+>>>>>>> 96c8f12a0ff455d657c1e18fbc9c66b5a79606cb
 }
 
-/* === About Section Text Container === */
-.about-story-text {
-    /* Padding is usually handled better by Bootstrap spacing utilities (px, py, ps, pe) */
-    padding-left: 15px; /* Default for mobile/small screens */
-    padding-right: 15px;
+/* === About Section Image === */
+.about-image-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-main-img {
+    width: 675px;
+    max-height: 675px; /* Optional: Sets a reasonable maximum height on large screens */
+    object-fit: cover;
+    display: block;
+    
+}
+
+/* === Story Box (White Container) === */
+.story-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 /* === About Section Title (h6) === */
-.about-story-text h6 {
+.about-Title {
     font-family: 'Fugaz One', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #980051;
     margin-bottom: 1rem;
     margin-top: 0;
-    /* ❌ Removed fixed width: 800px; (Breaks responsiveness) */
     width: auto; 
     text-align: center; /* Center on small screens by default */
 }
 
+.about-Title {
+    font-family: 'Fugaz One';
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: .5rem;
+}
+
 /* === About Section Paragraph Text === */
 .about-story-text p {
-    font-family: 'Montauk';
+    
     line-height: 1.6;
-    font-size: 1rem; /* Smaller font for better readability on small screens */
+    font-size: 0.95rem;
     color: #5F002B;
-    max-height: none;
+    margin-bottom: 1rem;
 }
 
 
@@ -44,11 +76,10 @@
     background-color: white; /* Ensures consistent background */
 }
 .about-text p {
-    font-size: 1rem; 
+    font-size: .5rem; 
     max-height: none;
-    font-family: 'Montauk', serif;
+ 
 }
-
 
 /*
  * ----------------------------------------------------------------
@@ -59,76 +90,92 @@
 .The-Team-grid {
     padding: 40px 15px;
     background-image: url(/RestaurantMockupFiles/assets/bgtexture.jpg);
-    text-align: center;
 }
 
 .team-header {
     background-color: white;
-    /* max-width: 1240px; (Keep only if you want to cap the width of the header text area) */
+     max-width: 1300px; 
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 0;
+    padding: 1rem ;
 }
 
 .team-header h6 {
     font-family: 'Fugaz One', sans-serif;
-    font-size: 2.2rem; /* Adjusted for better mobile scaling */
+    font-size: 1.8rem;
     color: #5F002B;
     margin: 0;
 }
 
-/* === Card Image Standardization (Ensures cards are the same height) === */
+/* === Card Styling === */
+.card {
+    color: #5F002B;
+    border-radius: 8px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 450;
+    text-align: left;
+    font-size: 0.95rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === Card Image Standardization === */
 .card-img-container {
-    height: 250px; /* Fixed height for the container to crop images uniformly */
-    overflow: hidden;
+    max-height: 536px; /* Fixed height for the container to crop images uniformly */
+    overflow:hidden;
 }
 
 .card-img-top-custom {
-    width: 100%;
+    max-width: 536px;
     height: 100%;
-    object-fit: cover; /* Crops image to fit container */
-    border-radius: 0;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
 }
 
 .card-header {
     color: #5F002B;
-    font-family: 'Fugaz One';
+    font-family: 'Fugaz One', sans-serif;
     text-align: left;
     padding: 0;
-    background-color: white;
-    font-size: 1.5rem; /* Use rem for scalability */
+    background-color: transparent;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    border: none;
 }
 
-.card {
-    color: #5F002B;
-    border-radius: 0;
-    font-family: 'Dosis';
-    font-weight: 450;
-    text-align: left;
-    font-size: 1rem; 
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 
-/*
- * ----------------------------------------------------------------
- * FOOTER STYLES (Using Bootstrap flex utilities in HTML is better, but here's the CSS)
- * ----------------------------------------------------------------
- */
 .footer-container {
     padding: 20px;
     color: white;
 
+    flex-direction: column;
+  display: flex;
 }
 
 .footer-left {
 
   display: flex;
   flex-direction: column;
-  gap: 4px;
+ align-items: left;
   text-align: left;
   font-size: 0.70rem;
   opacity: 0.9;
-  transform: translateX(50px);
+  margin-left: 7rem;
+
 }
 
 .footer-right {
@@ -136,89 +183,250 @@
   flex-direction: column; 
   align-items: center;
   text-align: center;
+<<<<<<< HEAD
   gap: 4px; 
 transition: translateX(-400px);
+=======
+
+>>>>>>> 96c8f12a0ff455d657c1e18fbc9c66b5a79606cb
 }
 
 .logo-small {
   width: 60px;
   height: auto;
+<<<<<<< HEAD
   opacity: 0.70;
   transition: translateX(-100px);
+=======
+  margin-bottom: 2px;
+ 
+
+    gap: 4px;
+    font-size: 0.9rem; 
+    opacity: 0.9;
+}
+
+.logo-small {
+    width: 50px; 
+    height: auto;
+>>>>>>> 96c8f12a0ff455d657c1e18fbc9c66b5a79606cb
 }
 
 .footer-right span {
     font-size: 0.8rem;
 }
 
-.text-color {
-    color: #5F002B;
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - TABLET (768px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 768px) {
+    /* About Section */
+    .about-splash-section {
+        padding: 40px 0;
+    }
+
+    .about-image-wrapper {
+        margin-bottom: 0;
+    }
+
+    .about-main-img {
+        height: 450px;
+    }
+
+    .story-box {
+        padding: 40px 30px;
+        margin-left: 20px;
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .about-Title {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .story-box p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* Team Section */
+    .team-header h6 {
+        font-size: 2rem;
+    }
+
+    .card-img-container {
+        height: 220px;
+    }
+
+    .card-header {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-right {
+        flex-direction: row;
+        margin-top: 0;
+        gap: 10px;
+    }
 }
 
 /*
  * ----------------------------------------------------------------
- * MEDIA QUERIES (Fine-tuning for different screen sizes)
+ * MEDIA QUERIES - DESKTOP (992px and up)
  * ----------------------------------------------------------------
  */
-
-/* === Mobile (Screen width up to 767px) === */
-@media (max-width: 767px) {
-    .about-story-text {
-        padding-left: 1rem; 
-        padding-right: 1rem;
-        margin-top: 1rem; 
-    }
-    
-    .about-story-text h6 {
-        font-size: 1.5rem; 
-        text-align: center; /* Override default left-align for stacking */
-    }
-    
-    .about-story-text p {
-        font-size: 0.9rem; 
-    }
-    
-    .team-header h6 {
-        font-size: 1.8rem;
-    }
-}
-
-
-/* === Tablet (Screen width 768px and up) === */
-@media (min-width: 768px) {
-    .about-story-text {
-        /* Align text left when side-by-side */
-        text-align: left;
-        /* Padding adjustments for desktop layout */
-        padding-left: 30px; 
-        padding-right: 15px; 
-    }
-    
-    .about-story-text h6 {
-        font-size: 1.8rem;
-        text-align: left; /* Align back to left */
-    }
-    
-    .about-story-text p {
-        font-size: 1.1rem; 
-    }
-}
-
-/* === Desktop (Screen width 992px and up) === */
 @media (min-width: 992px) {
-    .about-story-text h6 {
+    /* About Section */
+    .about-splash-section {
+        padding: 60px 0;
+    }
+
+    .about-main-img {
+        height: 600px;
+    }
+
+    .story-box {
+        padding: 50px 40px;
+        margin-left: 30px;
+        height: 600px;
+    }
+
+    .about-Title {
         font-size: 2rem;
     }
-    
-    .about-story-text p {
-        font-size: 1.25rem; 
+
+    .story-box p {
+        font-size: 1.1rem;
     }
-  }
+
+    /* Team Section */
+    .The-Team-grid {
+        padding: 60px 30px;
+    }
+
+    .team-header {
+        padding: 1.5rem 0;
+    }
+
+    .team-header h6 {
+        font-size: 2.2rem;
+    }
+
+    .card-img-container {
+        height: 250px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 25px 40px;
+    }
+
+    .footer-left {
+        font-size: 0.9rem;
+    }
+
+    .logo-small {
+        width: 60px;
+    }
+
+    .footer-right span {
+        font-size: 0.85rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - LARGE DESKTOP (1200px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 1200px) {
+    .about-main-img {
+        height: 700px;
+    }
+
+    .story-box {
+        height: 700px;
+        padding: 60px 50px;
+    }
+
+    .about-Title {
+        font-size: 2.2rem;
+    }
+
+    .story-box p {
+        font-size: 1.15rem;
+    }
+
+    .team-header h6 {
+        font-size: 2.5rem;
+    }
+}
+
+/*
+ * ----------------------------------------------------------------
+ * MEDIA QUERIES - EXTRA LARGE DESKTOP (1400px and up)
+ * ----------------------------------------------------------------
+ */
+@media (min-width: 1400px) {
+    .about-main-img {
+        height: 800px;
+    }
 
  .story-box {
   background: white;
+<<<<<<< HEAD
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   margin-left: 20px;
 }
+=======
+  padding: 33px;
+ 
+  
+  
+  max-width: 950px;
+  
+  height: 526px;
+  
+  /* box-sizing: border-box; */
+}
+
+@font-face {
+    font-family: 'Montauk';
+    src: url(/RestaurantMockupFiles/Montauk-Regular/Montauk-Light.otf);
+    font-weight: lighter;
+    
+}
+
+.main-about-text{
+    font-size: 16px;
+    font-family: 'Montauk';
+    color: #85003a;
+    line-height: 1.1;
+    
+}
+
+.navbar{
+    margin-right: 6rem;
+}
+>>>>>>> 96c8f12a0ff455d657c1e18fbc9c66b5a79606cb
